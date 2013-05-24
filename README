@@ -1,0 +1,13 @@
+Hello!
+
+All source files for my Coocox project for stm32f4discovery board are placed here.
+The project I am working currently on is construction of balancing robot.
+Multiple peripherials are used in this project, so this can be good source of examples for beginners and more advanced programmers. 
+
+List below shows what hardware I am / will be using : 
+	- STM32F4DISCOVERY
+	- KAMODBTM222 <-- Bluetooth module from Polish shop Kamami.pl
+	- MODMPU6050 <--- Inertial Measurement Unit based on MPU6050 by InvenSense, also bought in Kamami
+	- H - bridges made by myself based on LM6203 full DMOS bridges
+
+Fell free to ask me for any technical and related to programming stm32f4 details. Find contact e-mail on my git user page.
