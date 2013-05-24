@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.5.2 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=wzorzec_Flash.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\wzorzec -TC:\CooCox\CoIDE\configuration\ProgramData\wzorzec/link.ld -g">
+      <target file="wzorzec_Flash.elf" lastModified="13e9915cf72">
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="13e98f25f49"/>
+         <source file="..\obj\main.o" lastModified="13e9915cc93"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="13e98f26106"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="13e99147004"/>
+         <source file="..\obj\Delay.o" lastModified="13e98f26233"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="13e98f262e8"/>
+         <source file="..\obj\stm32f4xx_flash.o" lastModified="13e98f263c0"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="13e98f2645a"/>
+         <source file="..\obj\syscalls.o" lastModified="13e98f265f0"/>
+         <source file="..\obj\misc.o" lastModified="13e98f266d3"/>
+      </target>
+   </processor>
+</history>

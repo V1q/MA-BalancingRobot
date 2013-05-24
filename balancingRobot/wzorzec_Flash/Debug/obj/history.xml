@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DHSE_VALUE=8000000 -ID:\stm32f4\systik\libs\cmsis_lib\include -ID:\stm32f4\systik\libs\cmsis_boot -ID:\stm32f4\systik\libs\cmsis -ID:\stm32f4 -ID:\stm32f4\systik\libs\cmsis_lib -ID:\stm32f4\systik -ID:\stm32f4\systik\libs\Delay -ID:\stm32f4\systik\libs">
+      <target file="syscalls.o" lastModified="13e98f265f0">
+         <source file="..\..\..\..\systik\libs\syscalls\syscalls.c" lastModified="13b1464361e"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="13e98f262e8">
+         <source file="..\..\..\..\systik\libs\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13b12f1cae1"/>
+      </target>
+      <target file="stm32f4xx_flash.o" lastModified="13e98f263c0">
+         <source file="..\..\..\..\systik\libs\cmsis_lib\source\stm32f4xx_flash.c" lastModified="13b12f49302"/>
+      </target>
+      <target file="stm32f4xx_it.o" lastModified="13e99147004">
+         <source file="..\..\..\..\systik\libs\stm32f4xx_it.c" lastModified="13e99146a4f"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="13e98f2645a">
+         <source file="..\..\..\..\systik\libs\cmsis_boot\system_stm32f4xx.c" lastModified="13b14594126"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="13e98f25f49">
+         <source file="..\..\..\..\systik\libs\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13b12f1cae9"/>
+      </target>
+      <target file="Delay.o" lastModified="13e98f26233">
+         <source file="..\..\..\..\systik\libs\Delay\Delay.c" lastModified="135b65329f0"/>
+      </target>
+      <target file="main.o" lastModified="13e9915cc93">
+         <source file="..\..\..\..\systik\main.c" lastModified="13e9915c647"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="13e98f26106">
+         <source file="..\..\..\..\systik\libs\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13b12f1cb06"/>
+      </target>
+      <target file="misc.o" lastModified="13e98f266d3">
+         <source file="..\..\..\..\systik\libs\cmsis_lib\source\misc.c" lastModified="13b12f5c0d5"/>
+      </target>
+   </processor>
+</history>

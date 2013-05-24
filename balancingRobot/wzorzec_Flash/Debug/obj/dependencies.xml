@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/ID:\stm32f4\systik\libs\cmsis_lib\include /ID:\stm32f4\systik\libs\cmsis_boot /ID:\stm32f4\systik\libs\cmsis /ID:\stm32f4 /ID:\stm32f4\systik\libs\cmsis_lib /ID:\stm32f4\systik /ID:\stm32f4\systik\libs\Delay /ID:\stm32f4\systik\libs">
+      <source file="..\..\..\..\systik\libs\stm32f4xx_it.h" lastModified="13e98fa8723">
+         <include file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\systik\libs\Delay\Delay.h"/>
+         <include file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_gpio.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_boot\system_stm32f4xx.c" lastModified="13b14594126">
+         <include file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis\core_cmInstr.h" lastModified="13b12f1cee9">
+      </source>
+      <source file="..\..\..\..\systik\libs\stm32f4xx_it.c" lastModified="13e99146a4f">
+         <include file="..\..\..\..\systik\libs\stm32f4xx_it.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\Delay\Delay.h" lastModified="135b0dee4a0">
+         <include file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\syscalls\syscalls.c" lastModified="13b146445be">
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_lib\source\stm32f4xx_flash.c" lastModified="13b12f49302">
+         <include file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_flash.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13b12f1cb06">
+         <include file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13b12f1cae1">
+         <include file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx_conf.h" lastModified="13b12f21cf3">
+         <include file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_flash.h"/>
+         <include file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\systik\libs\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\Delay\Delay.c" lastModified="135b65329f0">
+         <include file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\systik\libs\Delay\Delay.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13b12f1cb05">
+         <include file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis\core_cmFunc.h" lastModified="13b12f1cee9">
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13b12f1cae1">
+         <include file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_lib\source\misc.c" lastModified="13b12f5c0d5">
+         <include file="..\..\..\..\systik\libs\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_lib\include\stm32f4xx_flash.h" lastModified="13b12f49302">
+         <include file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis\core_cm4_simd.h" lastModified="13b12f1cee8">
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_lib\include\misc.h" lastModified="13b12f5c0d3">
+         <include file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis\core_cm4.h" lastModified="13b12f1cee8">
+         <include file="..\..\..\..\systik\libs\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\..\systik\libs\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\..\systik\libs\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_boot\system_stm32f4xx.h" lastModified="13b12f1caed">
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx.h" lastModified="13b138ed82d">
+         <include file="..\..\..\..\systik\libs\cmsis\core_cm4.h"/>
+         <include file="..\..\..\..\systik\libs\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\systik\libs\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\..\systik\libs\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13b12f1cae9">
+      </source>
+   </includePath>
+</dependencies>
