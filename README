@@ -6,8 +6,8 @@ Multiple peripherials are used in this project, so this can be good source of ex
 
 List below shows what hardware I am / will be using : 
 	- STM32F4DISCOVERY
-	- KAMODBTM222 <-- Bluetooth module from Polish shop Kamami.pl
-	- MODMPU6050 <--- Inertial Measurement Unit based on MPU6050 by InvenSense, also bought in Kamami
+	- KAMODBTM222 <-- Bluetooth module
+	- MODMPU6050 <--- Inertial Measurement Unit based on MPU6050 by InvenSense
 	- H - bridges made by myself based on LM6203 full DMOS bridges
 
 Fell free to ask me for any technical and related to programming stm32f4 details. Find contact e-mail on my git user page.
