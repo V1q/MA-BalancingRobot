@@ -4,6 +4,7 @@
 #include "gpioMyConfiguration.h"
 #include "nvicMyConfiguration.h"
 #include "usartMyConfiguration.h"
+#include "MPU6050.h"
 
 
 //--------------

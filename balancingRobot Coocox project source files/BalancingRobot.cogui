@@ -9,10 +9,27 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/main.c" title="main.c" tooltip="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BalancingRobot/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="160" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MPU6050.c" partName="MPU6050.c" title="MPU6050.c" tooltip="D:\git\MA-BalancingRobot\balancingRobot Coocox project source files\my_files\MPU6050.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/D:/git/MA-BalancingRobot/balancingRobot%20Coocox%20project%20source%20files/my_files/MPU6050.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1876" selectionTopPixel="140"/>
+</editor>
+<editor activePart="true" focus="true" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" partName="Repository" title="Repository" tooltip="Repository" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">
+<subPage horizontalPosition="0" selectedItemId="510" subPageIndex="2" verticalPosition="0"/>
+</input>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
@@ -23,9 +40,6 @@
 <expanded>
 <element path="/BalancingRobot"/>
 </expanded>
-<selection>
-<element path="/BalancingRobot/nvicMyConfiguration.c"/>
-</selection>
 </viewState>
 </view>
 <view id="org.coocox.component.ui.ComponentView" partName="Components">
@@ -238,57 +252,74 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/main.c"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/D:/git/MA-BalancingRobot/balancingRobot%20Coocox%20project%20source%20files/my_files/MPU6050.c"/>
+<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
+<subPage horizontalPosition="0" selectedItemId="510" subPageIndex="2" verticalPosition="0"/>
+</editor>
+</editors>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="160" y="0"/>
+</item>
+<item historyLabel="MPU6050.c" index="1">
+<position info="not_deleted" x="1876" y="0"/>
+</item>
+<item active="true" historyLabel="Repository" index="2"/>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nvicMyConfiguration.c" tooltip="wzorzec/nvicMyConfiguration.c">
-<persistable path="/wzorzec/nvicMyConfiguration.c"/>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>
+<subPage horizontalPosition="0" selectedItemId="510" subPageIndex="2" verticalPosition="0"/>
+</persistable>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpioMyConfiguration.h" tooltip="wzorzec/gpioMyConfiguration.h">
-<persistable path="/wzorzec/gpioMyConfiguration.h"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MPU6050.c" tooltip="D:\git\MA-BalancingRobot\balancingRobot Coocox project source files\my_files\MPU6050.c">
+<persistable uri="file:/D:/git/MA-BalancingRobot/balancingRobot%20Coocox%20project%20source%20files/my_files/MPU6050.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="wzorzec/cmsis_lib/source/stm32f4xx_it.c">
-<persistable path="/wzorzec/cmsis_lib/source/stm32f4xx_it.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="BalancingRobot/main.c">
+<persistable path="/BalancingRobot/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="wzorzec/main.c">
-<persistable path="/wzorzec/main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" tooltip="BalancingRobot/cmsis_boot/stm32f4xx.h">
+<persistable path="/BalancingRobot/cmsis_boot/stm32f4xx.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usartMyConfiguration.c" tooltip="Balancing_Robot/usartMyConfiguration.c">
-<persistable path="/Balancing_Robot/usartMyConfiguration.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpioMyConfiguration.c" tooltip="BalancingRobot/gpioMyConfiguration.c">
+<persistable path="/BalancingRobot/gpioMyConfiguration.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_syscfg.h" tooltip="Balancing_Robot/cmsis_lib/include/stm32f4xx_syscfg.h">
-<persistable path="/Balancing_Robot/cmsis_lib/include/stm32f4xx_syscfg.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usartMyConfiguration.c" tooltip="BalancingRobot/usartMyConfiguration.c">
+<persistable path="/BalancingRobot/usartMyConfiguration.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usartMyFunctions.c" tooltip="Balancing_Robot/usartMyFunctions.c">
-<persistable path="/Balancing_Robot/usartMyFunctions.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usartMyFunctions.c" tooltip="BalancingRobot/usartMyFunctions.c">
+<persistable path="/BalancingRobot/usartMyFunctions.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usartMyFunctions.h" tooltip="Balancing_Robot/usartMyFunctions.h">
-<persistable path="/Balancing_Robot/usartMyFunctions.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_usart.c" tooltip="BalancingRobot/cmsis_lib/source/stm32f4xx_usart.c">
+<persistable path="/BalancingRobot/cmsis_lib/source/stm32f4xx_usart.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="Balancing_Robot/stm32f4xx_it.c">
-<persistable path="/Balancing_Robot/stm32f4xx_it.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="BalancingRobot/cmsis_lib/include/stm32f4xx_gpio.h">
+<persistable path="/BalancingRobot/cmsis_lib/include/stm32f4xx_gpio.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.h" tooltip="Balancing_Robot/stm32f4xx_it.h">
-<persistable path="/Balancing_Robot/stm32f4xx_it.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.h" tooltip="BalancingRobot/cmsis_lib/include/stm32f4xx_rcc.h">
+<persistable path="/BalancingRobot/cmsis_lib/include/stm32f4xx_rcc.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nvicMyConfiguration.c" tooltip="wzorzec/nvicMyConfiguration.c">
-<persistable path="/wzorzec/nvicMyConfiguration.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_i2c.c" tooltip="BalancingRobot/cmsis_lib/source/stm32f4xx_i2c.c">
+<persistable path="/BalancingRobot/cmsis_lib/source/stm32f4xx_i2c.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpioMyConfiguration.h" tooltip="wzorzec/gpioMyConfiguration.h">
-<persistable path="/wzorzec/gpioMyConfiguration.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_i2c.h" tooltip="BalancingRobot/cmsis_lib/include/stm32f4xx_i2c.h">
+<persistable path="/BalancingRobot/cmsis_lib/include/stm32f4xx_i2c.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="wzorzec/cmsis_lib/source/stm32f4xx_it.c">
-<persistable path="/wzorzec/cmsis_lib/source/stm32f4xx_it.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MPU6050.h" tooltip="BalancingRobot/mpu6050/MPU6050.h">
+<persistable path="/BalancingRobot/mpu6050/MPU6050.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="wzorzec/main.c">
-<persistable path="/wzorzec/main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MPU6050.c" tooltip="BalancingRobot/mpu6050/MPU6050.c">
+<persistable path="/BalancingRobot/mpu6050/MPU6050.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.h" tooltip="Balancing_Robot/stm32f4xx_it.h">
-<persistable path="/Balancing_Robot/stm32f4xx_it.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="HAL_MPU6050.h" tooltip="BalancingRobot/mpu6050/HAL_MPU6050.h">
+<persistable path="/BalancingRobot/mpu6050/HAL_MPU6050.h"/>
 </file>
 </mruList>
 </workbench>
