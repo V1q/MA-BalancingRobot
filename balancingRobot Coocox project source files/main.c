@@ -32,6 +32,7 @@ int main(void)
 
 	MPU6050_GetRawAccelGyro(AccelGyro);
 
+
     while(1)
     {
 

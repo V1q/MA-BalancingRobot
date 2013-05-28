@@ -4,9 +4,10 @@
     <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
     <BuildOption>
       <Compile>
-        <Option name="OptimizationLevel" value="0"/>
+        <Option name="OptimizationLevel" value="1"/>
         <Option name="UseFPU" value="0"/>
         <Option name="UserEditCompiler" value=""/>
+        <Option name="FPU" value="2"/>
         <Includepaths>
           <Includepath path="."/>
         </Includepaths>
@@ -16,6 +17,7 @@
           <Define name="USE_STDPERIPH_DRIVER"/>
           <Define name="__ASSEMBLY__"/>
           <Define name="HSE_VALUE=8000000"/>
+          <Define name="__FPU_USED"/>
         </DefinedSymbols>
       </Compile>
       <Link useDefault="0">
@@ -24,14 +26,17 @@
         <Option name="UserEditLinkder" value=""/>
         <Option name="UseMemoryLayout" value="1"/>
         <Option name="Library" value="Not use C Library"/>
-        <LinkedLibraries/>
+        <Option name="UserEditLinker" value=""/>
+        <LinkedLibraries>
+          <Libset dir="c:\program files (x86)\gnu tools arm embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\" libs="m"/>
+        </LinkedLibraries>
         <MemoryAreas debugInFlashNotRAM="1">
           <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
           <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
           <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
           <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
         </MemoryAreas>
-        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/balancingrobot/link.ld" type="0"/>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/balancingrobot/arm-gcc-link.ld" type="0"/>
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
@@ -144,25 +149,25 @@
     <Component id="526" name="SYSCFG" path="" type="2"/>
   </Components>
   <Files>
-    <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="libs/cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_flash.h" path="libs/cmsis_lib/include/stm32f4xx_flash.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="libs/cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_usart.c" path="libs/cmsis_lib/source/stm32f4xx_usart.c" type="1"/>
     <File name="nvicMyConfiguration.h" path="my_files/nvicMyConfiguration.h" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
     <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="libs/cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_usart.h" path="libs/cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
-    <File name="cmsis_boot/stm32f4xx.h" path="libs/cmsis_boot/stm32f4xx.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_flash.c" path="libs/cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
-    <File name="cmsis/core_cm4_simd.h" path="libs/cmsis/core_cm4_simd.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="cmsis_lib/source/stm32f4xx_flash.c" path="libs/cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="libs/cmsis_boot/stm32f4xx.h" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="libs/cmsis/core_cm4_simd.h" type="1"/>
     <File name="mpu6050" path="" type="2"/>
     <File name="cmsis/core_cmFunc.h" path="libs/cmsis/core_cmFunc.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="libs/cmsis/core_cm4.h" type="1"/>
     <File name="nvicMyConfiguration.c" path="my_files/nvicMyConfiguration.c" type="1"/>
+    <File name="gpioMyConfiguration.h" path="my_files/gpioMyConfiguration.h" type="1"/>
     <File name="cmsis_lib/source/misc.c" path="libs/cmsis_lib/source/misc.c" type="1"/>
     <File name="stm32f4xx_it.c" path="my_files/stm32f4xx_it.c" type="1"/>
-    <File name="gpioMyConfiguration.h" path="my_files/gpioMyConfiguration.h" type="1"/>
     <File name="syscalls/syscalls.c" path="libs/syscalls/syscalls.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
     <File name="cmsis_lib/source" path="" type="2"/>
