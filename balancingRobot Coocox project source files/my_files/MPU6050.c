@@ -58,12 +58,12 @@ void MPU6050_Initialize()
  * Make sure the device is connected and responds as expected.
  * @return True if connection is valid, FALSE otherwise
  */
-bool MPU6050_TestConnection() 
+int MPU6050_TestConnection()
 {
     if(MPU6050_GetDeviceID() == 0x34) //0b110100; 8-bit representation in hex = 0x34
-      return TRUE;
+      return 1;
     else
-      return FALSE;
+      return 0;
 }
 // WHO_AM_I register
 
@@ -76,7 +76,7 @@ bool MPU6050_TestConnection()
  */
 uint8_t MPU6050_GetDeviceID()
 {
-    uint8_t tmp;
+    uint8_t tmp=0;
     MPU6050_ReadBits(MPU6050_DEFAULT_ADDRESS, MPU6050_RA_WHO_AM_I, MPU6050_WHO_AM_I_BIT, MPU6050_WHO_AM_I_LENGTH, &tmp);
     return tmp; 
 }
@@ -196,14 +196,14 @@ void MPU6050_SetFullScaleAccelRange(uint8_t range)
  * @see MPU6050_RA_PWR_MGMT_1
  * @see MPU6050_PWR1_SLEEP_BIT
  */
-bool MPU6050_GetSleepModeStatus() 
+int MPU6050_GetSleepModeStatus()
 {
     uint8_t tmp;
     MPU6050_ReadBit(MPU6050_DEFAULT_ADDRESS, MPU6050_RA_PWR_MGMT_1, MPU6050_PWR1_SLEEP_BIT, &tmp);
     if(tmp == 0x00)
-      return FALSE;
+      return 0;
     else
-      return TRUE;    
+      return 1;
 }
 /** Set sleep mode status.
  * @param enabled New sleep mode enabled status

@@ -391,10 +391,9 @@ THE SOFTWARE.
 #define MPU6050_DMP_MEMORY_BANK_SIZE    256
 #define MPU6050_DMP_MEMORY_CHUNK_SIZE   16
 
-typedef enum {FALSE, TRUE} bool;
 
 void MPU6050_Initialize();
-bool MPU6050_TestConnection();
+int MPU6050_TestConnection();
 
 // GYRO_CONFIG register
 uint8_t MPU6050_GetFullScaleGyroRange();
@@ -404,7 +403,7 @@ uint8_t MPU6050_GetFullScaleAccelRange();
 void MPU6050_SetFullScaleAccelRange(uint8_t range);
 
 // PWR_MGMT_1 register
-bool MPU6050_GetSleepModeStatus();
+int MPU6050_GetSleepModeStatus();
 void MPU6050_SetSleepModeStatus(FunctionalState NewState);
 void MPU6050_SetClockSource(uint8_t source);
 // WHO_AM_I register
