@@ -153,7 +153,7 @@ __attribute__ ((section(".isr_vector")))
 void (* const g_pfnVectors[])(void) =
 {
   /*----------Core Exceptions------------------------------------------------ */
-  (void *)&pulStack[STACK_SIZE-1],     /*!< The initial stack pointer         */
+  (void (*)(void))((unsigned long)pulStack + sizeof(pulStack)),     /*!< The initial stack pointer         */
   Reset_Handler,             /*!< Reset Handler                               */
   NMI_Handler,               /*!< NMI Handler                                 */
   HardFault_Handler,         /*!< Hard Fault Handler                          */
@@ -294,6 +294,7 @@ void Default_Reset_Handler(void)
         "  STR R1, [R0]");
 #endif	
 
+  SystemInit();
   /* Call the application's entry point.*/
   main();
 }

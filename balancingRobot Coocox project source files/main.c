@@ -11,6 +11,9 @@
 //main loop
 int main(void)
 {
+	/* Set unbuffered mode for stdout (newlib) */
+	setvbuf( stdout, 0, _IONBF, 0 );
+
 	int i=0;
 	for(i=0;i<100000ul;i++);
 
@@ -20,19 +23,23 @@ int main(void)
 	nvic_config();
 	gpio_config();
 	usart_config();
-	USART_puts(USART1, "USART initialization complete!\r\n"); // just send a message to indicate that it works
+	USART_puts(USART1, "USART BT initialization complete!\r\n"); // just send a message to indicate that it works
 
 	MPU6050_I2C_Init();
 	MPU6050_Initialize();
 	if( MPU6050_TestConnection() == 1){
 	    // connection success
-		USART_puts(USART1, "I2C connection initialization complete!\r\n");
+		USART_puts(USART1, "I2C IMU connection initialization complete!\r\n");
 	}else{
 	    // connection failed
 		USART_puts(USART1, "I2C initialization failed!\r\n");
 	}
 
 	MPU6050_GetRawAccelGyro(AccelGyro);
+	float radToDeg =180 / 3.14159265359 ;
+	float katAcc = atan2f(AccelGyro[0],AccelGyro[2])*radToDeg;
+
+
 
     while(1)
     {
