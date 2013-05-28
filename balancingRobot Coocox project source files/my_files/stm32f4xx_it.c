@@ -28,6 +28,7 @@ u8 StateBefore = 0;
 volatile char received_string[MAX_STRLEN+2] = {' '}; // this will hold the recieved string
 #include "usartMyFunctions.h"
 
+
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -158,50 +159,30 @@ extern unsigned char odebranoDane;
 
 void USART1_IRQHandler(void)
 {
-/////////////////////////////////////////////////////////
-	/*if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
-	  {
-	    buforRx[bufRxIndex] = USART_ReceiveData(USART1);   //Odczyt danej automatycznie kasuje flage przerwania
-			if(buforRx[bufRxIndex] == 0x0D) { //Wykrycie znaku /CR
-	      odebranoDane = 1;
-	      while (bufRxIndex<17) {         //wyzerowanie znakow do konca bufora (zabezpiecza przed wyswietlaniem "smieci" na LCD)
-	        buforRx[bufRxIndex]=0;
-	        bufRxIndex++;
-	      }
-				bufRxIndex = 0;
-		  } else {                          //Obsluga pozostalych, "zwyklych" znakow
-	      bufRxIndex++;
-	      if (bufRxIndex>16){             //Zabezpieczenie przed przepelnieniem bufora jesli tekst odbierany jest dluzszy niz 16 znakow
-	        bufRxIndex=0;
-	      }
-	    }
-	  }*/
-	//odebranoDane = 1;
-/////////////////////////////////////////////////////////////
-	// check if the USART1 receive interrupt flag was set
-		if( USART_GetITStatus(USART1, USART_IT_RXNE) ){
 
-			static uint8_t cnt = 0; // this counter is used to determine the string length
-			char t = USART1->DR; // the character from the USART1 data register is saved in t
+	if( USART_GetITStatus(USART1, USART_IT_RXNE) ){
 
-			/* check if the received character is not the LF character (used to determine end of string)
-			 * or the if the maximum string length has been been reached
-			 */
-			if( (t != '!') && (cnt < MAX_STRLEN) ){
-				received_string[cnt] = t;
+		static uint8_t cnt = 0; // this counter is used to determine the string length
+		char t = USART1->DR; // the character from the USART1 data register is saved in t
+
+		/* check if the received character is not the '!' character (used to determine end of string)
+		 * or the if the maximum string length has been been reached
+		 */
+		if( (t != '!') && (cnt < MAX_STRLEN) ){
+			received_string[cnt] = t;
+			cnt++;
+		}
+		else{ // otherwise reset the character counter and print the received string
+			while(cnt<=MAX_STRLEN) {
+				received_string[cnt]=' ';
 				cnt++;
 			}
-			else{ // otherwise reset the character counter and print the received string
-				while(cnt<=MAX_STRLEN) {
-					received_string[cnt]=' ';
-					cnt++;
-				}
-				received_string[MAX_STRLEN]='\n';
-				received_string[MAX_STRLEN+1]='\r';
-				cnt = 0;
-				USART_puts(USART1, received_string);
-			}
+			received_string[MAX_STRLEN]='\n';
+			received_string[MAX_STRLEN+1]='\r';
+			cnt = 0;
+			USART_puts(USART1, received_string);
 		}
+	}
 }
 
 /**
