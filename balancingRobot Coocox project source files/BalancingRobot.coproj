@@ -4,10 +4,10 @@
     <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
     <BuildOption>
       <Compile>
-        <Option name="OptimizationLevel" value="1"/>
+        <Option name="OptimizationLevel" value="0"/>
         <Option name="UseFPU" value="0"/>
         <Option name="UserEditCompiler" value=""/>
-        <Option name="FPU" value="2"/>
+        <Option name="FPU" value="1"/>
         <Includepaths>
           <Includepath path="."/>
         </Includepaths>
@@ -28,7 +28,7 @@
         <Option name="Library" value="Not use C Library"/>
         <Option name="UserEditLinker" value=""/>
         <LinkedLibraries>
-          <Libset dir="c:\program files (x86)\gnu tools arm embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\" libs="m"/>
+          <Libset dir="c:\program files (x86)\gnu tools arm embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\softfp\" libs="m"/>
         </LinkedLibraries>
         <MemoryAreas debugInFlashNotRAM="1">
           <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
