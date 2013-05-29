@@ -40,23 +40,23 @@
       <target file="syscalls.o" lastModified="13eed2bb098">
          <source file="..\..\..\..\libs\syscalls\syscalls.c" lastModified="13b1464361e"/>
       </target>
-      <target file="MPU6050.o" lastModified="13eed2bb2f7">
-         <source file="..\..\..\..\my_files\MPU6050.c" lastModified="13eeb53fa8c"/>
-      </target>
       <target file="stm32f4xx_i2c.o" lastModified="13eed2bb1cb">
          <source file="..\..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="13ee25393e7"/>
       </target>
-      <target file="nvicMyConfiguration.o" lastModified="13eed2bafea">
-         <source file="..\..\..\..\my_files\nvicMyConfiguration.c" lastModified="13ece2519c6"/>
+      <target file="MPU6050.o" lastModified="13eed2bb2f7">
+         <source file="..\..\..\..\my_files\MPU6050.c" lastModified="13eeb53fa8c"/>
       </target>
-      <target file="main.o" lastModified="13eed2bad60">
-         <source file="..\..\..\..\main.c" lastModified="13eed267b96"/>
+      <target file="nvicMyConfiguration.o" lastModified="13ef0627705">
+         <source file="..\..\..\..\my_files\nvicMyConfiguration.c" lastModified="13ef05fcae0"/>
       </target>
-      <target file="stm32f4xx_usart.o" lastModified="13eed2bac43">
-         <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_usart.c" lastModified="13e99c76204"/>
+      <target file="main.o" lastModified="13ef062763a">
+         <source file="..\..\..\..\main.c" lastModified="13ef0625e09"/>
       </target>
       <target file="usartMyConfiguration.o" lastModified="13eed2baeaa">
          <source file="..\..\..\..\my_files\usartMyConfiguration.c" lastModified="13ece149754"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="13eed2bac43">
+         <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_usart.c" lastModified="13e99c76204"/>
       </target>
    </processor>
 </history>

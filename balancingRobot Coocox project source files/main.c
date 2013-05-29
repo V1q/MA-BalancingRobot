@@ -35,6 +35,8 @@ int main(void)
 		USART_puts(USART1, "I2C initialization failed!\r\n");
 	}
 
+	sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 10500000ul); // interruption every 1/2sec from systick
+
 	MPU6050_GetRawAccelGyro(AccelGyro);
 	float radToDeg =180 / 3.14159265359 ;
 	float katAcc = atan2f(AccelGyro[0],AccelGyro[2])*radToDeg;

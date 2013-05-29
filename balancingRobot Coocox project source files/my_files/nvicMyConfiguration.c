@@ -53,3 +53,36 @@ void enableEXTI0INT(NVIC_InitTypeDef *NVIC_InitStructure){
 	NVIC_InitStructure->NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(NVIC_InitStructure);
 }
+
+void sysTick_Config_Mod(unsigned long int SysTick_CLKSource, unsigned long int ticks){
+
+	unsigned long int Settings;
+
+	//check parameter
+	assert_param(IS_SYSTICK_CLK_SOURCE(SysTick_CLKSource));
+
+	//check whether initial value < MAX of register
+	if(ticks > SysTick_LOAD_RELOAD_Msk) return(1);
+
+	//load initial value to SysTick register
+	SysTick->LOAD = ( ticks & SysTick_LOAD_RELOAD_Msk)-1;
+
+	//set priority of interruption
+	NVIC_SetPriority(SysTick_IRQn, 0);
+
+	//load current value of timer register
+	SysTick->VAL = 0;
+
+	//enable SysTick interruption and timer itself
+	Settings = SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk;
+
+	//choose proper clock source on basis of SysTick_CLKSource parameter
+	if(SysTick_CLKSource == SysTick_CLKSource_HCLK){
+		Settings |= SysTick_CLKSource_HCLK;
+	}else{
+		Settings |= SysTick_CLKSource_HCLK_Div8;
+	}
+
+	//save settings to steering register
+	SysTick->CTRL = Settings;
+}

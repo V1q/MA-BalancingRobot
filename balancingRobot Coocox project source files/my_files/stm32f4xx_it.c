@@ -214,3 +214,14 @@ void EXTI0_IRQHandler(void)
 		EXTI_ClearITPendingBit(EXTI_Line0);
 	}
 }
+
+/**
+  * @brief  This function handles SysTick Handler.
+  * @param  None
+  * @retval None
+  */
+void SysTick_Handler(void)
+{
+
+}
+
