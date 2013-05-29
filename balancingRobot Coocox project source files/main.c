@@ -17,7 +17,6 @@ int main(void)
 	int i=0;
 	for(i=0;i<100000ul;i++);
 
-	int16_t  AccelGyro[6]={0};
 
 	rcc_config();
 	nvic_config();
@@ -36,10 +35,6 @@ int main(void)
 	}
 
 	sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 10500000ul); // interruption every 1/2sec from systick
-
-	MPU6050_GetRawAccelGyro(AccelGyro);
-	float radToDeg =180 / 3.14159265359 ;
-	float katAcc = atan2f(AccelGyro[0],AccelGyro[2])*radToDeg;
 
 
 

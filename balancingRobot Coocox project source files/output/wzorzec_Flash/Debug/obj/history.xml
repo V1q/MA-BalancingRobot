@@ -28,8 +28,8 @@
       <target file="rccMyConfiguration.o" lastModified="13eed2bb149">
          <source file="..\..\..\..\my_files\rccMyConfiguration.c" lastModified="13ed15fc7ed"/>
       </target>
-      <target file="stm32f4xx_it.o" lastModified="13eed2bae58">
-         <source file="..\..\..\..\my_files\stm32f4xx_it.c" lastModified="13eeb465b30"/>
+      <target file="stm32f4xx_it.o" lastModified="13ef072d1c5">
+         <source file="..\..\..\..\my_files\stm32f4xx_it.c" lastModified="13ef072c641"/>
       </target>
       <target file="stm32f4xx_rcc.o" lastModified="13eed2badfb">
          <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13b12f1cb06"/>
@@ -49,14 +49,14 @@
       <target file="nvicMyConfiguration.o" lastModified="13ef0627705">
          <source file="..\..\..\..\my_files\nvicMyConfiguration.c" lastModified="13ef05fcae0"/>
       </target>
-      <target file="main.o" lastModified="13ef062763a">
-         <source file="..\..\..\..\main.c" lastModified="13ef0625e09"/>
-      </target>
       <target file="usartMyConfiguration.o" lastModified="13eed2baeaa">
          <source file="..\..\..\..\my_files\usartMyConfiguration.c" lastModified="13ece149754"/>
       </target>
       <target file="stm32f4xx_usart.o" lastModified="13eed2bac43">
          <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_usart.c" lastModified="13e99c76204"/>
+      </target>
+      <target file="main.o" lastModified="13ef072911d">
+         <source file="..\..\..\..\main.c" lastModified="13ef07188c5"/>
       </target>
    </processor>
 </history>

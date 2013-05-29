@@ -27,6 +27,7 @@ u8 StateBefore = 0;
 #define MAX_STRLEN 20 // this is the maximum string length of our string in characters
 volatile char received_string[MAX_STRLEN+2] = {' '}; // this will hold the recieved string
 #include "usartMyFunctions.h"
+#include "MPU6050.h"
 
 
 /* Private typedef -----------------------------------------------------------*/
@@ -128,16 +129,6 @@ void PendSV_Handler(void)
 {
 }
 
-/**
-  * @brief  This function handles SysTick Handler.
-  * @param  None
-  * @retval None
-  */
-void SysTick_Handler(void)
-{
-
-}
-
 /******************************************************************************/
 /*                 STM32F4xx Peripherals Interrupt Handlers                   */
 /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */
@@ -223,5 +214,9 @@ void EXTI0_IRQHandler(void)
 void SysTick_Handler(void)
 {
 
+	int16_t  AccelGyro[6]={0};
+	MPU6050_GetRawAccelGyro(AccelGyro);
+	float radToDeg =180 / 3.14159265359 ;
+	float katAcc = atan2f(AccelGyro[0],AccelGyro[2])*radToDeg;
 }
 
