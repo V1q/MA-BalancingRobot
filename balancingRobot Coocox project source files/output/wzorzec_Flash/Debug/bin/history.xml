@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.5.2 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=wzorzec_Flash.map -O0 --gc-sections -lm -lgcc -lc -LC:\CooCox\CoIDE\configuration\ProgramData\BalancingRobot -TC:\CooCox\CoIDE\configuration\ProgramData\BalancingRobot/arm-gcc-link.ld -g -L..\..\..\.. -lm">
-      <target file="wzorzec_Flash.elf" lastModified="13ef072d54e">
-         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="13eed2bab44"/>
-         <source file="..\obj\usartMyFunctions.o" lastModified="13eed2babae"/>
-         <source file="..\obj\stm32f4xx_usart.o" lastModified="13eed2bac43"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="13eed2bac85"/>
-         <source file="..\obj\main.o" lastModified="13ef072911d"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="13eed2badfb"/>
-         <source file="..\obj\stm32f4xx_it.o" lastModified="13ef072d1c5"/>
-         <source file="..\obj\usartMyConfiguration.o" lastModified="13eed2baeaa"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="13eed2baf14"/>
-         <source file="..\obj\stm32f4xx_flash.o" lastModified="13eed2baf91"/>
-         <source file="..\obj\nvicMyConfiguration.o" lastModified="13ef0627705"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="13eed2bb045"/>
-         <source file="..\obj\syscalls.o" lastModified="13eed2bb098"/>
-         <source file="..\obj\gpioMyConfiguration.o" lastModified="13eed2bb0f1"/>
-         <source file="..\obj\rccMyConfiguration.o" lastModified="13eed2bb149"/>
-         <source file="..\obj\stm32f4xx_i2c.o" lastModified="13eed2bb1cb"/>
-         <source file="..\obj\stm32f4xx_exti.o" lastModified="13eed2bb229"/>
-         <source file="..\obj\misc.o" lastModified="13eed2bb281"/>
-         <source file="..\obj\MPU6050.o" lastModified="13eed2bb2f7"/>
+      <target file="wzorzec_Flash.elf" lastModified="13f05626ad8">
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="13f0561b465"/>
+         <source file="..\obj\usartMyFunctions.o" lastModified="13f0561b4c0"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="13f0561b53c"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="13f0561b581"/>
+         <source file="..\obj\main.o" lastModified="13f05626877"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="13f0561b685"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="13f0561b6e1"/>
+         <source file="..\obj\usartMyConfiguration.o" lastModified="13f0561b72e"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="13f0561b794"/>
+         <source file="..\obj\stm32f4xx_flash.o" lastModified="13f0561b80b"/>
+         <source file="..\obj\nvicMyConfiguration.o" lastModified="13f0561b864"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="13f0561b8c3"/>
+         <source file="..\obj\syscalls.o" lastModified="13f0561b92b"/>
+         <source file="..\obj\gpioMyConfiguration.o" lastModified="13f0561b985"/>
+         <source file="..\obj\rccMyConfiguration.o" lastModified="13f0561b9d8"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="13f0561ba52"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="13f0561baab"/>
+         <source file="..\obj\misc.o" lastModified="13f0561bafe"/>
+         <source file="..\obj\MPU6050.o" lastModified="13f0561bb70"/>
       </target>
    </processor>
 </history>

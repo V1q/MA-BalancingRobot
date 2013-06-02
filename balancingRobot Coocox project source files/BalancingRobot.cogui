@@ -11,13 +11,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/main.c" title="main.c" tooltip="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BalancingRobot/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="958" selectionTopPixel="96"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1051" selectionTopPixel="171"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" partName="startup_stm32f4xx.c" path="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/libs/cmsis_boot/startup/startup_stm32f4xx.c" title="startup_stm32f4xx.c" tooltip="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/libs/cmsis_boot/startup/startup_stm32f4xx.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BalancingRobot/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="4005"/>
 </editor>
 </editors>
 <views>
@@ -25,15 +30,20 @@
 <viewState/>
 </view>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="10">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/BalancingRobot"/>
 <element path="/BalancingRobot/cmsis"/>
 <element path="/BalancingRobot/cmsis_boot"/>
 <element path="/BalancingRobot/cmsis_boot/startup"/>
+<element path="/BalancingRobot/cmsis_lib"/>
+<element path="/BalancingRobot/cmsis_lib/include"/>
+<element path="/BalancingRobot/cmsis_lib/source"/>
+<element path="/BalancingRobot/mpu6050"/>
+<element path="/BalancingRobot/syscalls"/>
 </expanded>
 <selection>
-<element path="/BalancingRobot/stm32f4xx_it.c"/>
+<element path="/BalancingRobot/cmsis_boot/startup/startup_stm32f4xx.c"/>
 </selection>
 </viewState>
 </view>
@@ -96,7 +106,7 @@
 <fastViewBars>
 <fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@a4ceb3" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.278125"/>
 <view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
@@ -202,35 +212,50 @@
 <view id="org.coocox.builder.ui.views.ProjectView"/>
 <fastViewBars/>
 <viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@ce280b">&#x0A;<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@ce280b">
+<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="978" ratioRight="326" relationship="2" relative="org.eclipse.ui.internal.ViewStack@ce280b">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="978" ratioRight="326" relationship="2" relative="org.eclipse.ui.internal.ViewStack@ce280b">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@b4b6e7" ratio="0.6985871" ratioLeft="445" ratioRight="192" relationship="4" relative="org.eclipse.ui.internal.ViewStack@ce280b">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@b4b6e7" ratio="0.6985871" ratioLeft="445" ratioRight="192" relationship="4" relative="org.eclipse.ui.internal.ViewStack@ce280b">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@542c5e" ratio="0.5" ratioLeft="652" ratioRight="652" relationship="2" relative="org.eclipse.ui.internal.ViewStack@b4b6e7">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@542c5e" ratio="0.5" ratioLeft="652" ratioRight="652" relationship="2" relative="org.eclipse.ui.internal.ViewStack@b4b6e7">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="Memory Browser"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@2d01c1" ratio="0.75" ratioLeft="978" ratioRight="326" relationship="2" relative="org.eclipse.ui.internal.ViewStack@ce280b">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2d01c1" ratio="0.75" ratioLeft="978" ratioRight="326" relationship="2" relative="org.eclipse.ui.internal.ViewStack@ce280b">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView_debug" label="LabelNotFound"/>
@@ -246,157 +271,164 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/stm32f4xx_it.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/syscalls/syscalls.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="0" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_boot/stm32f4xx_conf.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_boot/stm32f4xx.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis/core_cm4.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/rccMyConfiguration.c"/>
 <editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
 <org.coocox.builder.ui.editors.ConfigEditor/>
 </editor>
 <editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
 <org.coocox.builder.ui.editors.ConfigEditor/>
 </editor>
-<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\include\stdio.h" project="BalancingRobot"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/nvicMyConfiguration.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/nvicMyConfiguration.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/stm32f4xx_it.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/rccMyConfiguration.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis/core_cm4_simd.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_boot/stm32f4xx_conf.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_boot/stm32f4xx.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_boot/system_stm32f4xx.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/syscalls/syscalls.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/main.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="858" y="0"/>
+<item historyLabel="startup_stm32f4xx.c" index="1">
+<position info="not_deleted" x="15658" y="14"/>
+</item>
+<item historyLabel="stm32f4xx_conf.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32f4xx.h" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="core_cm4.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32f4xx.h" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_conf.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="startup_stm32f4xx.c" index="1">
+<position info="not_deleted" x="15658" y="14"/>
+</item>
+<item historyLabel="Configuration" index="3"/>
+<item historyLabel="syscalls.c" index="2">
+<position info="not_deleted" x="1551" y="0"/>
 </item>
 <item historyLabel="Configuration" index="3"/>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="858" y="0"/>
+<position info="not_deleted" x="1159" y="0"/>
 </item>
-<item historyLabel="startup_stm32f4xx.c" index="2">
+<item historyLabel="Configuration" index="3"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1159" y="0"/>
+</item>
+<item historyLabel="rccMyConfiguration.c" index="7">
+<position info="not_deleted" x="1255" y="1"/>
+</item>
+<item historyLabel="Configuration" index="3"/>
+<item historyLabel="Configuration" index="8"/>
+<item historyLabel="Configuration" index="9"/>
+<item historyLabel="main.c" index="10">
+<position info="not_deleted" x="1159" y="0"/>
+</item>
+<item historyLabel="Configuration" index="9"/>
+<item historyLabel="rccMyConfiguration.c" index="11">
+<position info="not_deleted" x="1040" y="0"/>
+</item>
+<item historyLabel="Configuration" index="9"/>
+<item historyLabel="core_cm4_simd.h" index="12">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="2">
-<position info="not_deleted" x="14785" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1027" y="0"/>
-</item>
-<item historyLabel="Configuration" index="4"/>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="344" y="0"/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="2">
-<position info="not_deleted" x="14785" y="0"/>
-</item>
-<item historyLabel="Configuration" index="4"/>
-<item historyLabel="startup_stm32f4xx.c" index="2">
-<position info="not_deleted" x="6521" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1023" y="0"/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="2">
-<position info="not_deleted" x="1281" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="1">
+<item historyLabel="Configuration" index="9"/>
+<item historyLabel="startup_stm32f4xx.c" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="448" y="0"/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="2">
-<position info="not_deleted" x="1281" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="448" y="0"/>
-</item>
-<item historyLabel="Configuration" index="4"/>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="2493" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position/>
-</item>
-<item historyLabel="Configuration" index="4"/>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="2493" y="0"/>
-</item>
-<item historyLabel="Configuration" index="4"/>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="2493" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1023" y="0"/>
-</item>
-<item historyLabel="stdio.h" index="5">
-<position info="not_deleted" x="6886" y="104"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1025" y="0"/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="2">
+<item historyLabel="stm32f4xx_conf.h" index="14">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="346" y="0"/>
+<item historyLabel="stm32f4xx.h" index="15">
+<position info="not_deleted" x="374310" y="3"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="system_stm32f4xx.c" index="16">
+<position info="not_deleted" x="8199" y="0"/>
 </item>
-<item historyLabel="nvicMyConfiguration.c" index="6">
-<position info="not_deleted" x="1848" y="85"/>
+<item historyLabel="stm32f4xx.h" index="15">
+<position info="not_deleted" x="374310" y="3"/>
 </item>
-<item historyLabel="nvicMyConfiguration.h" index="7">
-<position info="not_deleted" x="344" y="0"/>
-</item>
-<item historyLabel="nvicMyConfiguration.c" index="6">
-<position info="not_deleted" x="1936" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="958" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="8">
-<position/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="9">
+<item historyLabel="stm32f4xx_conf.h" index="14">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="958" y="0"/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="9">
+<item historyLabel="startup_stm32f4xx.c" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="8">
-<position/>
+<item historyLabel="Configuration" index="9"/>
+<item historyLabel="main.c" index="10">
+<position info="not_deleted" x="770" y="0"/>
 </item>
-<item historyLabel="startup_stm32f4xx.c" index="9">
+<item historyLabel="syscalls.c" index="17">
+<position info="not_deleted" x="1479" y="0"/>
+</item>
+<item historyLabel="main.c" index="10">
+<position info="not_deleted" x="770" y="0"/>
+</item>
+<item historyLabel="Configuration" index="18"/>
+<item historyLabel="main.c" index="10">
+<position info="not_deleted" x="770" y="0"/>
+</item>
+<item historyLabel="Configuration" index="19"/>
+<item historyLabel="main.c" index="10">
+<position info="not_deleted" x="770" y="0"/>
+</item>
+<item historyLabel="Configuration" index="20"/>
+<item historyLabel="main.c" index="10">
+<position info="not_deleted" x="770" y="0"/>
+</item>
+<item historyLabel="startup_stm32f4xx.c" index="21">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="962" y="0"/>
+<item historyLabel="Configuration" index="22"/>
+<item historyLabel="main.c" index="23">
+<position info="not_deleted" x="770" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="8">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Configuration" index="24"/>
+<item historyLabel="main.c" index="23">
+<position info="not_deleted" x="770" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="958" y="0"/>
+<item historyLabel="Configuration" index="24"/>
+<item historyLabel="main.c" index="23">
+<position info="not_deleted" x="770" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="8">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.c" index="23">
+<position info="not_deleted" x="263" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="8">
-<position info="not_deleted" x="950" y="0"/>
+<item historyLabel="main.c" index="23">
+<position info="not_deleted" x="1101" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="8">
-<position info="not_deleted" x="3157" y="0"/>
-</item>
-<item active="true" historyLabel="main.c" index="0">
-<position info="not_deleted" x="958" y="0"/>
+<item active="true" historyLabel="main.c" index="23">
+<position info="not_deleted" x="1051" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -405,50 +437,51 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="BalancingRobot/stm32f4xx_it.c">
-<persistable path="/BalancingRobot/stm32f4xx_it.c"/>
+<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
+<persistable>
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</persistable>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nvicMyConfiguration.h" tooltip="BalancingRobot/nvicMyConfiguration.h">
-<persistable path="/BalancingRobot/nvicMyConfiguration.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nvicMyConfiguration.c" tooltip="BalancingRobot/nvicMyConfiguration.c">
-<persistable path="/BalancingRobot/nvicMyConfiguration.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpioMyConfiguration.c" tooltip="BalancingRobot/gpioMyConfiguration.c">
-<persistable path="/BalancingRobot/gpioMyConfiguration.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpioMyConfiguration.h" tooltip="BalancingRobot/gpioMyConfiguration.h">
-<persistable path="/BalancingRobot/gpioMyConfiguration.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usartMyFunctions.c" tooltip="BalancingRobot/usartMyFunctions.c">
-<persistable path="/BalancingRobot/usartMyFunctions.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_usart.c" tooltip="BalancingRobot/cmsis_lib/source/stm32f4xx_usart.c">
-<persistable path="/BalancingRobot/cmsis_lib/source/stm32f4xx_usart.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usartMyConfiguration.c" tooltip="BalancingRobot/usartMyConfiguration.c">
-<persistable path="/BalancingRobot/usartMyConfiguration.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usartMyConfiguration.h" tooltip="BalancingRobot/usartMyConfiguration.h">
-<persistable path="/BalancingRobot/usartMyConfiguration.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.c" tooltip="BalancingRobot/cmsis_lib/source/stm32f4xx_gpio.c">
-<persistable path="/BalancingRobot/cmsis_lib/source/stm32f4xx_gpio.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="rccMyConfiguration.c" tooltip="BalancingRobot/rccMyConfiguration.c">
-<persistable path="/BalancingRobot/rccMyConfiguration.c"/>
+<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
+<persistable>
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</persistable>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="BalancingRobot/cmsis_boot/startup/startup_stm32f4xx.c">
 <persistable path="/BalancingRobot/cmsis_boot/startup/startup_stm32f4xx.c"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\include\stdio.h">
-<persistable path="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\include\stdio.h" project="BalancingRobot"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="syscalls.c" tooltip="BalancingRobot/syscalls/syscalls.c">
+<persistable path="/BalancingRobot/syscalls/syscalls.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="BalancingRobot/cmsis_boot/system_stm32f4xx.c">
 <persistable path="/BalancingRobot/cmsis_boot/system_stm32f4xx.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.h" tooltip="wzorzec/cmsis_lib/include/stm32f4xx_it.h">
-<persistable path="/wzorzec/cmsis_lib/include/stm32f4xx_it.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" tooltip="BalancingRobot/cmsis_boot/stm32f4xx.h">
+<persistable path="/BalancingRobot/cmsis_boot/stm32f4xx.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_conf.h" tooltip="BalancingRobot/cmsis_boot/stm32f4xx_conf.h">
+<persistable path="/BalancingRobot/cmsis_boot/stm32f4xx_conf.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm4_simd.h" tooltip="BalancingRobot/cmsis/core_cm4_simd.h">
+<persistable path="/BalancingRobot/cmsis/core_cm4_simd.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="rccMyConfiguration.c" tooltip="BalancingRobot/rccMyConfiguration.c">
+<persistable path="/BalancingRobot/rccMyConfiguration.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm4.h" tooltip="BalancingRobot/cmsis/core_cm4.h">
+<persistable path="/BalancingRobot/cmsis/core_cm4.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="HAL_MPU6050.h" tooltip="BalancingRobot/mpu6050/HAL_MPU6050.h">
+<persistable path="/BalancingRobot/mpu6050/HAL_MPU6050.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MPU6050.c" tooltip="BalancingRobot/mpu6050/MPU6050.c">
+<persistable path="/BalancingRobot/mpu6050/MPU6050.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpioMyConfiguration.c" tooltip="BalancingRobot/gpioMyConfiguration.c">
+<persistable path="/BalancingRobot/gpioMyConfiguration.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_usart.h" tooltip="BalancingRobot/cmsis_lib/include/stm32f4xx_usart.h">
+<persistable path="/BalancingRobot/cmsis_lib/include/stm32f4xx_usart.h"/>
 </file>
 </mruList>
 </workbench>

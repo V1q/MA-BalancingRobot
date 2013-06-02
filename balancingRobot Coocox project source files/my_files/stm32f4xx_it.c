@@ -28,7 +28,7 @@ u8 StateBefore = 0;
 volatile char received_string[MAX_STRLEN+2] = {' '}; // this will hold the recieved string
 #include "usartMyFunctions.h"
 #include "MPU6050.h"
-
+#include <stdio.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -216,7 +216,12 @@ void SysTick_Handler(void)
 
 	int16_t  AccelGyro[6]={0};
 	MPU6050_GetRawAccelGyro(AccelGyro);
-	float radToDeg =180 / 3.14159265359 ;
+	float radToDeg =180.0 / 3.14159265359 ;
 	float katAcc = atan2f(AccelGyro[0],AccelGyro[2])*radToDeg;
+
+	/* Set unbuffered mode for stdout (newlib) */
+	setvbuf( stdout, 0, _IONBF, 0 );
+	printf("ACC angle:\t %f \n\r", katAcc);
+
 }
 

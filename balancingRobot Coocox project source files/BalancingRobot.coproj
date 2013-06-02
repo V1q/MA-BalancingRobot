@@ -28,7 +28,7 @@
         <Option name="Library" value="Use base C Library"/>
         <Option name="UserEditLinker" value=""/>
         <LinkedLibraries>
-          <Libset dir="" libs="m"/>
+          <Libset dir="c:\program files (x86)\gnu tools arm embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\softfp\" libs="m"/>
         </LinkedLibraries>
         <MemoryAreas debugInFlashNotRAM="1">
           <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
@@ -41,7 +41,7 @@
       <Output>
         <Option name="OutputFileType" value="0"/>
         <Option name="Path" value="output/"/>
-        <Option name="Name" value="wzorzec_Flash"/>
+        <Option name="Name" value="BalancingRobot"/>
         <Option name="HEX" value="1"/>
         <Option name="BIN" value="1"/>
         <Option name="ComponentFileStoragePath" value="libs"/>
@@ -158,17 +158,17 @@
     <File name="cmsis_boot" path="" type="2"/>
     <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="libs/cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_usart.h" path="libs/cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
-    <File name="cmsis_boot/startup" path="" type="2"/>
-    <File name="cmsis_boot/stm32f4xx.h" path="libs/cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis/core_cm4_simd.h" path="libs/cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="libs/cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_flash.c" path="libs/cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="mpu6050" path="" type="2"/>
     <File name="cmsis/core_cmFunc.h" path="libs/cmsis/core_cmFunc.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="libs/cmsis/core_cm4.h" type="1"/>
     <File name="nvicMyConfiguration.c" path="my_files/nvicMyConfiguration.c" type="1"/>
-    <File name="cmsis_lib/source/misc.c" path="libs/cmsis_lib/source/misc.c" type="1"/>
     <File name="stm32f4xx_it.c" path="my_files/stm32f4xx_it.c" type="1"/>
     <File name="gpioMyConfiguration.h" path="my_files/gpioMyConfiguration.h" type="1"/>
+    <File name="cmsis_lib/source/misc.c" path="libs/cmsis_lib/source/misc.c" type="1"/>
     <File name="syscalls/syscalls.c" path="libs/syscalls/syscalls.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
     <File name="cmsis_lib/source" path="" type="2"/>

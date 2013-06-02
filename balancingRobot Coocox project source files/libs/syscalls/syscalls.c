@@ -7,6 +7,7 @@
 #include <stdarg.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include "stm32f4xx_usart.h"
 
 #undef errno
 extern int errno;
@@ -59,7 +60,21 @@ int _read(int file, char *ptr, int len)
 
 int _write(int file, char *ptr, int len)
 {
-  return len;
+
+	/* Place your implementation of fputc here */
+	/* e.g. write a character to the USART */
+	int counter;
+
+	        counter = len;
+	        for (; counter > 0; counter--)
+	        {
+	                        if (*ptr == 0) break;
+	                        USART_SendData(USART1, (uint16_t) (*ptr));
+	                        /* Loop until the end of transmission */
+	                        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+	                        ptr++;
+	        }
+		return len;
 }
 
 void abort(void)

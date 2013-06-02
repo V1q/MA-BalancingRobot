@@ -11,8 +11,6 @@
 //main loop
 int main(void)
 {
-	/* Set unbuffered mode for stdout (newlib) */
-	setvbuf( stdout, 0, _IONBF, 0 );
 
 	int i=0;
 	for(i=0;i<100000ul;i++);

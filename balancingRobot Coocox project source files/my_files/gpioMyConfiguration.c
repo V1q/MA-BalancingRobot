@@ -2,7 +2,7 @@
 
 /* Initializes all needed GPIO pins for balancing robot project
  * GPIO ports initialized: 	PORT D -> 12,13,14,15 diodes
- *							PORT B -> 6,7 USART used for communication with Bluetooth module
+ *							PORT B -> 6,7 TX,RX USART used for communication with Bluetooth module
  *							PORT A -> 8 NRES (reset) signal for Bluetooth module
  *							PORT A -> 0 user's button
 */
