@@ -12,23 +12,10 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_it.h"
-
-/*
-__IO uint16_t IC3ReadValues[8];
-__IO uint16_t CaptureNumber = 0;
-__IO uint32_t Capture = 0;
-__IO uint32_t TIM1Freq = 0;
-
-__IO uint16_t Throttle, Aileron, Elevation, Rudder;
-
-u8 StateBefore = 0;
-*/
-
-#define MAX_STRLEN 20 // this is the maximum string length of our string in characters
-volatile char received_string[MAX_STRLEN+2] = {' '}; // this will hold the recieved string
 #include "usartMyFunctions.h"
 #include "MPU6050.h"
 #include <stdio.h>
+#include <math.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -36,6 +23,16 @@ volatile char received_string[MAX_STRLEN+2] = {' '}; // this will hold the recie
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
+
+/* Global variables  ---------------------------------------------------------*/
+
+#define MAX_STRLEN 20 // this is the maximum string length of our string in characters
+volatile char received_string[MAX_STRLEN+2] = {' '}; // this will hold the recieved string
+
+float radiansToDegrees =180.0 / 3.14159265359 ;
+float gyroYAngle = 0.0;
+float filteredAngle=0.0;
+float alfa = 0.96;
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Exceptions Handlers                         */
@@ -196,7 +193,7 @@ void EXTI0_IRQHandler(void)
 		/* Toggle LED1 */
 		GPIO_ToggleBits(GPIOD, GPIO_Pin_12);
 
-		volatile char message[]= "Klik!\r\n";
+		volatile char message[]= "Click!\r\n";
 		volatile char *messagePointer = &message[0];
 
 		USART_puts(USART1, messagePointer);
@@ -216,12 +213,16 @@ void SysTick_Handler(void)
 
 	int16_t  AccelGyro[6]={0};
 	MPU6050_GetRawAccelGyro(AccelGyro);
-	float radToDeg =180.0 / 3.14159265359 ;
-	float katAcc = atan2f(AccelGyro[0],AccelGyro[2])*radToDeg;
+
+	float accelerometerYAngle = atan2f(AccelGyro[0],AccelGyro[2])*radiansToDegrees;
+	float gyroscopeYAngleDelta = (AccelGyro[4] / 131.0)*-0.04;
+
+	gyroYAngle = filteredAngle + gyroscopeYAngleDelta;
+	filteredAngle = ( alfa * gyroYAngle ) + ((1-alfa)*(accelerometerYAngle));
 
 	/* Set unbuffered mode for stdout (newlib) */
 	setvbuf( stdout, 0, _IONBF, 0 );
-	printf("ACC angle:\t %f \n\r", katAcc);
+	printf("filtered angle:\t  %f \n\r", filteredAngle);
 
 }
 

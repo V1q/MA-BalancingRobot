@@ -32,8 +32,8 @@ int main(void)
 		USART_puts(USART1, "I2C initialization failed!\r\n");
 	}
 
-	sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 10500000ul); // interruption every 1/2sec from systick
-
+	//sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 10500000ul); // interruption every 1/2sec from systick
+	sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 840000ul); // interruption every 0.04sec from systick
 
 
     while(1)
