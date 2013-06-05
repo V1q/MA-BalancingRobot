@@ -222,7 +222,8 @@ void SysTick_Handler(void)
 
 	/* Set unbuffered mode for stdout (newlib) */
 	setvbuf( stdout, 0, _IONBF, 0 );
-	printf("filtered angle:\t  %f \n\r", filteredAngle);
+	//printf("filtered angle:\t  %f \n\r", filteredAngle);
+	printf("%f\n", filteredAngle);
 
 }
 
