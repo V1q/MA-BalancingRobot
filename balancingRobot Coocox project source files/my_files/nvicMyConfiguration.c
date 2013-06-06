@@ -54,7 +54,7 @@ void enableEXTI0INT(NVIC_InitTypeDef *NVIC_InitStructure){
 	NVIC_Init(NVIC_InitStructure);
 }
 
-void sysTick_Config_Mod(unsigned long int SysTick_CLKSource, unsigned long int ticks){
+int sysTick_Config_Mod(unsigned long int SysTick_CLKSource, unsigned long int ticks){
 
 	unsigned long int Settings;
 
@@ -85,4 +85,6 @@ void sysTick_Config_Mod(unsigned long int SysTick_CLKSource, unsigned long int t
 
 	//save settings to steering register
 	SysTick->CTRL = Settings;
+
+	return (0);
 }

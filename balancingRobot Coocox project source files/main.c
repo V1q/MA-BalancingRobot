@@ -1,8 +1,11 @@
 //includes
+//my files
 #include "rccMyConfiguration.h"
 #include "gpioMyConfiguration.h"
 #include "nvicMyConfiguration.h"
 #include "usartMyConfiguration.h"
+#include "pwmMyConfiguration.h"
+//libraries
 #include "MPU6050.h"
 #include "Math.h"
 #include <stdio.h>
@@ -12,7 +15,7 @@
 int main(void)
 {
 
-	int i=0;
+	volatile int i=0;
 	for(i=0;i<100000ul;i++);
 
 
@@ -20,6 +23,8 @@ int main(void)
 	nvic_config();
 	gpio_config();
 	usart_config();
+	pwm_config();
+
 	USART_puts(USART1, "USART BT initialization complete!\r\n"); // just send a message to indicate that it works
 
 	MPU6050_I2C_Init();
@@ -35,9 +40,9 @@ int main(void)
 	//sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 10500000ul); // interruption every 1/2sec from systick
 	sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 840000ul); // interruption every 0.04sec from systick
 
-
     while(1)
     {
+
 
     }
 }

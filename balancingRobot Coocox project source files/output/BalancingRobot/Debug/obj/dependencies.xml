@@ -6,18 +6,18 @@
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_flash.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\..\my_files\nvicMyConfiguration.c" lastModified="13ef28745df">
+      <source file="..\..\..\..\my_files\nvicMyConfiguration.c" lastModified="13f1a2f8b8e">
          <include file="..\..\..\..\my_files\nvicMyConfiguration.h"/>
       </source>
       <source file="..\..\..\..\my_files\usartMyFunctions.h" lastModified="13ece2f6e0a">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_usart.h"/>
       </source>
-      <source file="..\..\..\..\my_files\gpioMyConfiguration.h" lastModified="13ecdf70f96">
+      <source file="..\..\..\..\my_files\gpioMyConfiguration.h" lastModified="13f1a22f0f2">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_gpio.h"/>
       </source>
-      <source file="..\..\..\..\my_files\rccMyConfiguration.c" lastModified="13ed15fc7ed">
+      <source file="..\..\..\..\my_files\rccMyConfiguration.c" lastModified="13f1afe88b2">
          <include file="..\..\..\..\my_files\rccMyConfiguration.h"/>
       </source>
       <source file="..\..\..\..\my_files\usartMyFunctions.c" lastModified="13ece2f408f">
@@ -29,21 +29,38 @@
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_exti.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_usart.h"/>
       </source>
-      <source file="..\..\..\..\my_files\gpioMyConfiguration.c" lastModified="13f05468e5a">
-         <include file="..\..\..\..\my_files\gpioMyConfiguration.h"/>
+      <source file="..\..\..\..\my_files\stm32f4xx_it.c" lastModified="13f162bc549">
+         <include file="..\..\..\..\my_files\stm32f4xx_it.h"/>
+         <include file="..\..\..\..\my_files\usartMyFunctions.h"/>
+         <include file="..\..\..\..\my_files\MPU6050.h"/>
+      </source>
+      <source file="..\..\..\..\my_files\pwmMyConfiguration.h" lastModified="13f1af19430">
+         <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
       </source>
       <source file="..\..\..\..\libs\cmsis_lib\include\misc.h" lastModified="13b12f5c0d3">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\..\libs\syscalls\syscalls.c" lastModified="13f06ff612b">
+      <source file="..\..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f1a3467cc">
+         <include file="..\..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\libs\syscalls\syscalls.c" lastModified="13f162bcd12">
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_usart.h"/>
       </source>
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13ebc9155c4">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
       </source>
+      <source file="..\..\..\..\my_files\pwmMyConfiguration.c" lastModified="13f1aff64a2">
+         <include file="..\..\..\..\my_files\pwmMyConfiguration.h"/>
+      </source>
       <source file="..\..\..\..\libs\cmsis\core_cmInstr.h" lastModified="13b12f1cee9">
       </source>
-      <source file="..\..\..\..\my_files\HAL_MPU6050.h" lastModified="13ee25393e9">
+      <source file="..\..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f1a3467b0">
+         <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\my_files\HAL_MPU6050.h" lastModified="13f162bbd73">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13ebc918c9f">
@@ -53,15 +70,16 @@
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\..\libs\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13f071c1abb">
+      <source file="..\..\..\..\libs\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13f162bbd71">
       </source>
-      <source file="..\..\..\..\libs\cmsis_boot\stm32f4xx_conf.h" lastModified="13b12f20d53">
+      <source file="..\..\..\..\libs\cmsis_boot\stm32f4xx_conf.h" lastModified="13b12f2096b">
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_exti.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_flash.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_rcc.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_usart.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\misc.h"/>
       </source>
@@ -71,17 +89,18 @@
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13b12f1cae1">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\..\main.c" lastModified="13f0bb9d2a9">
+      <source file="..\..\..\..\main.c" lastModified="13f1b00f29d">
          <include file="..\..\..\..\my_files\rccMyConfiguration.h"/>
          <include file="..\..\..\..\my_files\gpioMyConfiguration.h"/>
          <include file="..\..\..\..\my_files\nvicMyConfiguration.h"/>
          <include file="..\..\..\..\my_files\usartMyConfiguration.h"/>
+         <include file="..\..\..\..\my_files\pwmMyConfiguration.h"/>
          <include file="..\..\..\..\my_files\MPU6050.h"/>
       </source>
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13b12f1cb05">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\..\my_files\MPU6050.h" lastModified="13ef28745ce">
+      <source file="..\..\..\..\my_files\MPU6050.h" lastModified="13f162bbd75">
          <include file="..\..\..\..\my_files\HAL_MPU6050.h"/>
       </source>
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_usart.h" lastModified="13e99c761f6">
@@ -91,7 +110,7 @@
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_usart.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\..\my_files\MPU6050.c" lastModified="13ef28745b3">
+      <source file="..\..\..\..\my_files\MPU6050.c" lastModified="13f162bbd74">
          <include file="..\..\..\..\my_files\MPU6050.h"/>
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
@@ -121,7 +140,7 @@
       <source file="..\..\..\..\my_files\usartMyConfiguration.c" lastModified="13ece149754">
          <include file="..\..\..\..\my_files\usartMyConfiguration.h"/>
       </source>
-      <source file="..\..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="13ee25393e7">
+      <source file="..\..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="13f162bbd6f">
          <include file="..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
@@ -130,7 +149,7 @@
          <include file="..\..\..\..\libs\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\..\libs\cmsis\core_cm4_simd.h"/>
       </source>
-      <source file="..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h" lastModified="13ee25393e6">
+      <source file="..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h" lastModified="13f162bbd6e">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13b12f1cb06">
@@ -143,7 +162,7 @@
       </source>
       <source file="..\..\..\..\libs\cmsis\core_cmFunc.h" lastModified="13b12f1cee9">
       </source>
-      <source file="..\..\..\..\my_files\nvicMyConfiguration.h" lastModified="13ef28745df">
+      <source file="..\..\..\..\my_files\nvicMyConfiguration.h" lastModified="13f1a2fb1e6">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_exti.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\misc.h"/>

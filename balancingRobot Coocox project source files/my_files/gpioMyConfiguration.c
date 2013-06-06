@@ -5,6 +5,7 @@
  *							PORT B -> 6,7 TX,RX USART used for communication with Bluetooth module
  *							PORT A -> 8 NRES (reset) signal for Bluetooth module
  *							PORT A -> 0 user's button
+ *							PORT A -> 3,2 PWM outputs
 */
 void gpio_config(void){
 
@@ -14,6 +15,7 @@ void gpio_config(void){
 	configureGPIODiodes(GPIO_InitStructurePointer);
 	configureGPIOBT(GPIO_InitStructurePointer);
 	configureGPIOButton(GPIO_InitStructurePointer);
+	configureGPIOPWM(GPIO_InitStructurePointer);
 }
 
 void configureGPIODiodes ( GPIO_InitTypeDef *GPIO_InitStructure ){
@@ -66,4 +68,28 @@ void configureGPIOButton ( GPIO_InitTypeDef *GPIO_InitStructure ){
 	GPIO_InitStructure->GPIO_PuPd = GPIO_PuPd_NOPULL;
 	GPIO_InitStructure->GPIO_Pin = GPIO_Pin_0;
 	GPIO_Init(GPIOA, GPIO_InitStructure);
+}
+
+void configureGPIOPWM ( GPIO_InitTypeDef *GPIO_InitStructure ){
+
+	//PA3 - TIM5 CH4
+	GPIO_InitStructure->GPIO_Pin = GPIO_Pin_3;
+	GPIO_InitStructure->GPIO_Speed = GPIO_Speed_100MHz;
+	GPIO_InitStructure->GPIO_Mode = GPIO_Mode_AF;
+	GPIO_InitStructure->GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure->GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_Init(GPIOA, GPIO_InitStructure);
+
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_TIM5);
+
+	//PA2 - TIM2  CH3
+	GPIO_InitStructure->GPIO_Pin = GPIO_Pin_2;
+	GPIO_InitStructure->GPIO_Speed = GPIO_Speed_100MHz;
+	GPIO_InitStructure->GPIO_Mode = GPIO_Mode_AF;
+	GPIO_InitStructure->GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure->GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_Init(GPIOA, GPIO_InitStructure);
+
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_TIM2);
+
 }

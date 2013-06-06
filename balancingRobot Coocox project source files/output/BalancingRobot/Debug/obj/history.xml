@@ -1,62 +1,68 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DHSE_VALUE=8000000 -D__FPU_USED -ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files -ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs -ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis_lib -ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis_boot -ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\my_files -ID:\git\MA-BalancingRobot -ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\cmsis_lib -ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis -ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\cmsis_lib\include -ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis_lib\include">
-      <target file="stm32f4xx_exti.o" lastModified="13f071e7083">
+      <target file="stm32f4xx_exti.o" lastModified="13f1ae69c10">
          <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13ebc918c9f"/>
       </target>
-      <target file="stm32f4xx_gpio.o" lastModified="13f071e6998">
+      <target file="stm32f4xx_gpio.o" lastModified="13f1ae6972a">
          <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13b12f1cae1"/>
       </target>
-      <target file="gpioMyConfiguration.o" lastModified="13f071e6de4">
-         <source file="..\..\..\..\my_files\gpioMyConfiguration.c" lastModified="13f05468e5a"/>
+      <target file="gpioMyConfiguration.o" lastModified="13f1b0195e4">
+         <source file="..\..\..\..\my_files\gpioMyConfiguration.c" lastModified="13f1b018c56"/>
       </target>
-      <target file="stm32f4xx_flash.o" lastModified="13f071e6aa6">
+      <target file="stm32f4xx_flash.o" lastModified="13f1ae697f5">
          <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_flash.c" lastModified="13b12f49302"/>
       </target>
-      <target file="stm32f4xx_syscfg.o" lastModified="13f071e61af">
+      <target file="stm32f4xx_syscfg.o" lastModified="13f1ae69179">
          <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13ebc9155c8"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="13f071e6468">
-         <source file="..\..\..\..\libs\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13f071c1abb"/>
+      <target file="startup_stm32f4xx.o" lastModified="13f1a2ee978">
+         <source file="..\..\..\..\libs\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13f162bbd71"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="13f071e6c3c">
+      <target file="stm32f4xx_tim.o" lastModified="13f1ae69e82">
+         <source file="..\..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f1a3467cc"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="13f1ae6990b">
          <source file="..\..\..\..\libs\cmsis_boot\system_stm32f4xx.c" lastModified="13f056ac8d1"/>
       </target>
-      <target file="misc.o" lastModified="13f071e713c">
+      <target file="misc.o" lastModified="13f1ae69c91">
          <source file="..\..\..\..\libs\cmsis_lib\source\misc.c" lastModified="13b12f5c0d5"/>
       </target>
-      <target file="rccMyConfiguration.o" lastModified="13f071e6ea4">
-         <source file="..\..\..\..\my_files\rccMyConfiguration.c" lastModified="13ed15fc7ed"/>
+      <target file="rccMyConfiguration.o" lastModified="13f1afe9083">
+         <source file="..\..\..\..\my_files\rccMyConfiguration.c" lastModified="13f1afe88b2"/>
       </target>
-      <target file="stm32f4xx_it.o" lastModified="13f0bf183cd">
-         <source file="..\..\..\..\my_files\stm32f4xx_it.c" lastModified="13f0bf17a96"/>
+      <target file="stm32f4xx_it.o" lastModified="13f1ae6955c">
+         <source file="..\..\..\..\my_files\stm32f4xx_it.c" lastModified="13f162bbd79"/>
       </target>
-      <target file="stm32f4xx_rcc.o" lastModified="13f071e6711">
+      <target file="stm32f4xx_rcc.o" lastModified="13f1ae694a2">
          <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13b12f1cb06"/>
       </target>
-      <target file="usartMyFunctions.o" lastModified="13f071e6280">
+      <target file="pwmMyConfiguration.o" lastModified="13f1b00f594">
+         <source file="..\..\..\..\my_files\pwmMyConfiguration.c" lastModified="13f1aff64a2"/>
+      </target>
+      <target file="usartMyFunctions.o" lastModified="13f1ae69234">
          <source file="..\..\..\..\my_files\usartMyFunctions.c" lastModified="13ece2f408f"/>
       </target>
-      <target file="syscalls.o" lastModified="13f071e6d24">
-         <source file="..\..\..\..\libs\syscalls\syscalls.c" lastModified="13f06ff518b"/>
+      <target file="syscalls.o" lastModified="13f1ae699bd">
+         <source file="..\..\..\..\libs\syscalls\syscalls.c" lastModified="13f162bbd72"/>
       </target>
-      <target file="stm32f4xx_i2c.o" lastModified="13f071e6fbe">
-         <source file="..\..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="13ee25393e7"/>
+      <target file="stm32f4xx_i2c.o" lastModified="13f1ae69b8b">
+         <source file="..\..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="13f162bbd6f"/>
       </target>
-      <target file="MPU6050.o" lastModified="13f071e7239">
-         <source file="..\..\..\..\my_files\MPU6050.c" lastModified="13ef28745b3"/>
+      <target file="MPU6050.o" lastModified="13f1ae69d3c">
+         <source file="..\..\..\..\my_files\MPU6050.c" lastModified="13f162bbd74"/>
       </target>
-      <target file="nvicMyConfiguration.o" lastModified="13f071e6b74">
-         <source file="..\..\..\..\my_files\nvicMyConfiguration.c" lastModified="13ef28745df"/>
+      <target file="nvicMyConfiguration.o" lastModified="13f1ae6987f">
+         <source file="..\..\..\..\my_files\nvicMyConfiguration.c" lastModified="13f1a2f8b8e"/>
       </target>
-      <target file="main.o" lastModified="13f0bbd5542">
-         <source file="..\..\..\..\main.c" lastModified="13f0bb9cad9"/>
-      </target>
-      <target file="usartMyConfiguration.o" lastModified="13f071e68b1">
+      <target file="usartMyConfiguration.o" lastModified="13f1ae6967a">
          <source file="..\..\..\..\my_files\usartMyConfiguration.c" lastModified="13ece149754"/>
       </target>
-      <target file="stm32f4xx_usart.o" lastModified="13f071e63c7">
+      <target file="stm32f4xx_usart.o" lastModified="13f1ae692fa">
          <source file="..\..\..\..\libs\cmsis_lib\source\stm32f4xx_usart.c" lastModified="13e99c76204"/>
+      </target>
+      <target file="main.o" lastModified="13f1b00f512">
+         <source file="..\..\..\..\main.c" lastModified="13f1b00eacd"/>
       </target>
    </processor>
 </history>

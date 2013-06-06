@@ -65,7 +65,7 @@ void enableClockSourcesForPeripherials(){
 
 	//enable clock source for GPIO D (diodes)
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
-	//enable clock source for GPIO A (nres,button)
+	//enable clock source for GPIO A (nres,button,pwms)
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
 	//enable clock source for USART
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
@@ -73,4 +73,7 @@ void enableClockSourcesForPeripherials(){
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
 	//enable clock source for GPIO B - USART pins
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+	//enable clock source for TIM2 and TIM5
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM5, ENABLE);
 }

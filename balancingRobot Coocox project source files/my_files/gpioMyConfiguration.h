@@ -5,3 +5,4 @@ void gpio_config(void);
 void configureGPIODiodes ( GPIO_InitTypeDef *GPIO_InitStructure );
 void configureGPIOBT ( GPIO_InitTypeDef *GPIO_InitStructure );
 void configureGPIOButton ( GPIO_InitTypeDef *GPIO_InitStructure );
+void configureGPIOPWM ( GPIO_InitTypeDef *GPIO_InitStructure );
