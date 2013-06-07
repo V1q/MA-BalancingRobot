@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.5.2 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=wzorzec_Flash.map -O0 --gc-sections -lm -lgcc -lc -LC:\CooCox\CoIDE\configuration\ProgramData\BalancingRobot -TC:\CooCox\CoIDE\configuration\ProgramData\BalancingRobot/arm-gcc-link.ld -g -LC:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\softfp -lm">
-      <target file="wzorzec_Flash.elf" lastModified="13f1e6f1781">
+      <target file="wzorzec_Flash.elf" lastModified="13f1e8047af">
          <source file="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\softfp\libm.a" lastModified="13d5fdaf550"/>
          <source file="..\obj\stm32f4xx_syscfg.o" lastModified="13f1ae69179"/>
          <source file="..\obj\usartMyFunctions.o" lastModified="13f1ae69234"/>
          <source file="..\obj\stm32f4xx_usart.o" lastModified="13f1ae692fa"/>
          <source file="..\obj\startup_stm32f4xx.o" lastModified="13f1a2ee978"/>
-         <source file="..\obj\main.o" lastModified="13f1e6cb40c"/>
+         <source file="..\obj\main.o" lastModified="13f1e804237"/>
          <source file="..\obj\stm32f4xx_rcc.o" lastModified="13f1ae694a2"/>
-         <source file="..\obj\stm32f4xx_it.o" lastModified="13f1ae6955c"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="13f1e804345"/>
          <source file="..\obj\pwmMyConfiguration.o" lastModified="13f1e4b62a0"/>
          <source file="..\obj\usartMyConfiguration.o" lastModified="13f1ae6967a"/>
          <source file="..\obj\stm32f4xx_gpio.o" lastModified="13f1ae6972a"/>

@@ -10,6 +10,7 @@
 #include "Math.h"
 #include <stdio.h>
 
+int16_t  yGyroOffset=0;
 
 int main(void)
 {
@@ -35,6 +36,10 @@ int main(void)
 	    // connection failed
 		USART_puts(USART1, "I2C initialization failed!\r\n");
 	}
+
+	int16_t  offsets[6]={0};
+	MPU6050_GetRawAccelGyro(offsets);
+	yGyroOffset = offsets[4];
 
 	//sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 10500000ul); // interruption every 1/2sec from systick
 	sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 840000ul); // interruption every 0.04sec from systick

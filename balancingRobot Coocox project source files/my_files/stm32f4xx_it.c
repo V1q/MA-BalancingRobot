@@ -33,6 +33,7 @@ float radiansToDegrees =180.0 / 3.14159265359 ;
 float gyroYAngle = 0.0;
 float filteredAngle=0.0;
 float alfa = 0.96;
+extern int16_t  yGyroOffset;
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Exceptions Handlers                         */
@@ -215,7 +216,7 @@ void SysTick_Handler(void)
 	MPU6050_GetRawAccelGyro(AccelGyro);
 
 	float accelerometerYAngle = atan2f(AccelGyro[0],AccelGyro[2])*radiansToDegrees;
-	float gyroscopeYAngleDelta = (AccelGyro[4] / 131.0)*-0.04;
+	float gyroscopeYAngleDelta = ((AccelGyro[4]-yGyroOffset) / 131.0)*-0.04;
 
 	gyroYAngle = filteredAngle + gyroscopeYAngleDelta;
 	filteredAngle = ( alfa * gyroYAngle ) + ((1-alfa)*(accelerometerYAngle));
