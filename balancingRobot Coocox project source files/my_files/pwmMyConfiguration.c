@@ -30,10 +30,38 @@ void pwm_config(){
 
 }
 
-void pwm_set_pulse(uint32_t pulse){
+void pwm_set_pulse(float pulse){
 
-	TIM2->CCR3 = pulse;
-	TIM5->CCR4 = pulse;
+	pwm_set_direction(pulse);
+	int pwmRegister = (int) fabs(pulse);
+
+	TIM2->CCR3 = pwmRegister;
+	TIM5->CCR4 = pwmRegister;
 
 }
 
+void pwm_set_direction(float pulse){
+
+	if(pulse > 0){
+		// go forward
+		GPIO_WriteBit(GPIOE, GPIO_Pin_7, Bit_RESET);
+		GPIO_WriteBit(GPIOE, GPIO_Pin_8, Bit_RESET);
+		GPIO_WriteBit(GPIOE, GPIO_Pin_9, Bit_RESET);
+		GPIO_WriteBit(GPIOE, GPIO_Pin_10, Bit_RESET);
+
+		GPIO_WriteBit(GPIOE, GPIO_Pin_8, Bit_SET);
+		GPIO_WriteBit(GPIOE, GPIO_Pin_10, Bit_SET);
+
+	}else{
+		// go backwards
+		GPIO_WriteBit(GPIOE, GPIO_Pin_7, Bit_RESET);
+		GPIO_WriteBit(GPIOE, GPIO_Pin_8, Bit_RESET);
+		GPIO_WriteBit(GPIOE, GPIO_Pin_9, Bit_RESET);
+		GPIO_WriteBit(GPIOE, GPIO_Pin_10, Bit_RESET);
+
+		GPIO_WriteBit(GPIOE, GPIO_Pin_7, Bit_SET);
+		GPIO_WriteBit(GPIOE, GPIO_Pin_9, Bit_SET);
+
+	}
+
+}

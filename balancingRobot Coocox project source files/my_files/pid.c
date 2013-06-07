@@ -37,8 +37,8 @@ void PIDStructInit(PIDStruct* InitializedPIDStruct){
 
 	InitializedPIDStruct->integral = 0;
 
-	InitializedPIDStruct->maxRange = 1000;
-	InitializedPIDStruct->minRange = -1000;
+	InitializedPIDStruct->maxRange = 65534;		// max pulse width with current configutration
+	InitializedPIDStruct->minRange = -65534;	// minus represents opposite direction
 
 }
 

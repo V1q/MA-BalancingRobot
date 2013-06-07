@@ -14,6 +14,7 @@
 #include "stm32f4xx_it.h"
 #include "usartMyFunctions.h"
 #include "MPU6050.h"
+#include "pid.h"
 #include <stdio.h>
 #include <math.h>
 
@@ -34,6 +35,8 @@ float gyroYAngle = 0.0;
 float filteredAngle=0.0;
 float alfa = 0.96;
 extern int16_t  yGyroOffset;
+extern PIDStruct MyPIDStruct;
+
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Exceptions Handlers                         */
@@ -213,6 +216,8 @@ void SysTick_Handler(void)
 {
 
 	int16_t  AccelGyro[6]={0};
+
+
 	MPU6050_GetRawAccelGyro(AccelGyro);
 
 	float accelerometerYAngle = atan2f(AccelGyro[0],AccelGyro[2])*radiansToDegrees;
@@ -220,6 +225,11 @@ void SysTick_Handler(void)
 
 	gyroYAngle = filteredAngle + gyroscopeYAngleDelta;
 	filteredAngle = ( alfa * gyroYAngle ) + ((1-alfa)*(accelerometerYAngle));
+
+	float output = pid(&MyPIDStruct);
+	pwm_set_pulse(output);
+
+	//// Visualisation part ////
 
 	/* Set unbuffered mode for stdout (newlib) */
 	setvbuf( stdout, 0, _IONBF, 0 );

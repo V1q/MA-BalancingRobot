@@ -6,6 +6,7 @@
  *							PORT A -> 8 NRES (reset) signal for Bluetooth module
  *							PORT A -> 0 user's button
  *							PORT A -> 3,2 PWM outputs
+ *							PORT E -> 7,8,9,10 motors direction control
 */
 void gpio_config(void){
 
@@ -16,6 +17,7 @@ void gpio_config(void){
 	configureGPIOBT(GPIO_InitStructurePointer);
 	configureGPIOButton(GPIO_InitStructurePointer);
 	configureGPIOPWM(GPIO_InitStructurePointer);
+	configureGPIOMotors (GPIO_InitStructurePointer);
 }
 
 void configureGPIODiodes ( GPIO_InitTypeDef *GPIO_InitStructure ){
@@ -92,4 +94,15 @@ void configureGPIOPWM ( GPIO_InitTypeDef *GPIO_InitStructure ){
 
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_TIM2);
 
+}
+
+void configureGPIOMotors ( GPIO_InitTypeDef *GPIO_InitStructure ){
+
+	GPIO_InitStructure->GPIO_Pin = GPIO_Pin_7 | GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10;
+	GPIO_InitStructure->GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_InitStructure->GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitStructure->GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure->GPIO_PuPd = GPIO_PuPd_UP;
+
+	GPIO_Init(GPIOE, GPIO_InitStructure);
 }
