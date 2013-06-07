@@ -11,23 +11,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pwmMyConfiguration.c" partName="pwmMyConfiguration.c" path="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/my_files/pwmMyConfiguration.c" title="pwmMyConfiguration.c" tooltip="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/my_files/pwmMyConfiguration.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BalancingRobot/pwmMyConfiguration.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="171" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pwmMyConfiguration.h" partName="pwmMyConfiguration.h" path="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/my_files/pwmMyConfiguration.h" title="pwmMyConfiguration.h" tooltip="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/my_files/pwmMyConfiguration.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BalancingRobot/pwmMyConfiguration.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="100" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_tim.h" partName="stm32f4xx_tim.h" path="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/cmsis_lib/include/stm32f4xx_tim.h" title="stm32f4xx_tim.h" tooltip="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/cmsis_lib/include/stm32f4xx_tim.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BalancingRobot/cmsis_lib/include/stm32f4xx_tim.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="22" selectionOffset="2500" selectionTopPixel="645"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/main.c" title="main.c" tooltip="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BalancingRobot/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1089" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -35,20 +25,12 @@
 <viewState/>
 </view>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="27">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="2">
 <expanded>
 <element path="/BalancingRobot"/>
-<element path="/BalancingRobot/cmsis"/>
-<element path="/BalancingRobot/cmsis_boot"/>
-<element path="/BalancingRobot/cmsis_boot/startup"/>
-<element path="/BalancingRobot/cmsis_lib"/>
-<element path="/BalancingRobot/cmsis_lib/include"/>
-<element path="/BalancingRobot/cmsis_lib/source"/>
-<element path="/BalancingRobot/mpu6050"/>
-<element path="/BalancingRobot/syscalls"/>
 </expanded>
 <selection>
-<element path="/BalancingRobot/main.c"/>
+<element path="/BalancingRobot/pwmMyConfiguration.c"/>
 </selection>
 </viewState>
 </view>
@@ -260,166 +242,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/pwmMyConfiguration.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/pwmMyConfiguration.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/gpioMyConfiguration.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/gpioMyConfiguration.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/rccMyConfiguration.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/nvicMyConfiguration.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/nvicMyConfiguration.h"/>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage/>
-</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/pwmMyConfiguration.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_lib/include/stm32f4xx_tim.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/rccMyConfiguration.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/rccMyConfiguration.c"/>
 </editors>
-<item historyLabel="pwmMyConfiguration.c" index="1">
-<position info="not_deleted" x="157" y="0"/>
+<item historyLabel="pwmMyConfiguration.h" index="4">
+<position/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="148" y="31"/>
-</item>
-<item historyLabel="pwmMyConfiguration.c" index="1">
-<position info="not_deleted" x="155" y="0"/>
-</item>
-<item historyLabel="pwmMyConfiguration.h" index="2">
-<position info="not_deleted" x="102" y="0"/>
-</item>
-<item historyLabel="pwmMyConfiguration.c" index="1">
-<position info="not_deleted" x="155" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="148" y="31"/>
-</item>
-<item historyLabel="gpioMyConfiguration.c" index="3">
+<item historyLabel="nvicMyConfiguration.h" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="pwmMyConfiguration.c" index="1">
-<position info="not_deleted" x="155" y="0"/>
+<item historyLabel="main.c" index="2">
+<position info="not_deleted" x="175" y="0"/>
 </item>
-<item historyLabel="pwmMyConfiguration.h" index="2">
-<position info="not_deleted" x="102" y="0"/>
+<item historyLabel="pwmMyConfiguration.h" index="4">
+<position/>
 </item>
-<item historyLabel="pwmMyConfiguration.h" index="2">
-<position info="not_deleted" x="81" y="0"/>
+<item historyLabel="main.c" index="2">
+<position info="not_deleted" x="175" y="0"/>
 </item>
-<item historyLabel="gpioMyConfiguration.c" index="3">
-<position info="not_deleted" x="10" y="19"/>
+<item historyLabel="pwmMyConfiguration.h" index="4">
+<position/>
 </item>
-<item historyLabel="gpioMyConfiguration.h" index="4">
-<position info="not_deleted" x="0" y="51"/>
+<item historyLabel="main.c" index="2">
+<position info="not_deleted" x="175" y="0"/>
 </item>
-<item historyLabel="pwmMyConfiguration.h" index="2">
-<position info="not_deleted" x="81" y="0"/>
+<item historyLabel="pwmMyConfiguration.h" index="4">
+<position/>
 </item>
-<item historyLabel="rccMyConfiguration.c" index="5">
-<position info="not_deleted" x="1059" y="0"/>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
 </item>
-<item historyLabel="gpioMyConfiguration.c" index="3">
-<position info="not_deleted" x="26" y="0"/>
+<item historyLabel="pwmMyConfiguration.h" index="4">
+<position/>
 </item>
-<item historyLabel="gpioMyConfiguration.h" index="4">
-<position info="not_deleted" x="301" y="0"/>
+<item historyLabel="main.c" index="2">
+<position info="not_deleted" x="204" y="0"/>
 </item>
-<item historyLabel="gpioMyConfiguration.c" index="3">
-<position info="not_deleted" x="707" y="0"/>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
 </item>
-<item historyLabel="rccMyConfiguration.c" index="5">
-<position info="not_deleted" x="2673" y="0"/>
+<item historyLabel="stm32f4xx_tim.h" index="5">
+<position/>
 </item>
-<item historyLabel="nvicMyConfiguration.c" index="6">
-<position info="not_deleted" x="2099" y="49"/>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
 </item>
-<item historyLabel="nvicMyConfiguration.c" index="6">
-<position info="not_deleted" x="25" y="0"/>
+<item historyLabel="stm32f4xx_tim.h" index="5">
+<position/>
 </item>
-<item historyLabel="nvicMyConfiguration.h" index="7">
-<position info="not_deleted" x="345" y="0"/>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
 </item>
-<item historyLabel="nvicMyConfiguration.c" index="6">
-<position info="not_deleted" x="25" y="0"/>
+<item historyLabel="stm32f4xx_tim.h" index="5">
+<position/>
 </item>
-<item historyLabel="nvicMyConfiguration.h" index="7">
-<position info="not_deleted" x="345" y="0"/>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
 </item>
-<item historyLabel="nvicMyConfiguration.c" index="6">
-<position info="not_deleted" x="25" y="0"/>
+<item historyLabel="main.c" index="2">
+<position info="not_deleted" x="204" y="0"/>
 </item>
-<item historyLabel="gpioMyConfiguration.c" index="3">
-<position info="not_deleted" x="707" y="0"/>
+<item historyLabel="gpioMyConfiguration.c" index="1">
+<position/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="148" y="31"/>
-</item>
-<item historyLabel="gpioMyConfiguration.c" index="3">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="nvicMyConfiguration.c" index="6">
-<position info="not_deleted" x="25" y="0"/>
-</item>
-<item historyLabel="gpioMyConfiguration.h" index="4">
-<position info="not_deleted" x="301" y="0"/>
-</item>
-<item historyLabel="nvicMyConfiguration.c" index="6">
-<position info="not_deleted" x="25" y="0"/>
-</item>
-<item historyLabel="rccMyConfiguration.c" index="5">
-<position info="not_deleted" x="2673" y="0"/>
-</item>
-<item historyLabel="nvicMyConfiguration.c" index="6">
-<position info="not_deleted" x="25" y="0"/>
-</item>
-<item historyLabel="nvicMyConfiguration.h" index="7">
-<position info="not_deleted" x="345" y="0"/>
-</item>
-<item historyLabel="pwmMyConfiguration.h" index="2">
-<position info="not_deleted" x="81" y="0"/>
-</item>
-<item historyLabel="pwmMyConfiguration.c" index="1">
-<position info="not_deleted" x="155" y="0"/>
-</item>
-<item historyLabel="pwmMyConfiguration.h" index="2">
-<position info="not_deleted" x="81" y="0"/>
-</item>
-<item historyLabel="Repository" index="8"/>
-<item historyLabel="pwmMyConfiguration.h" index="2">
-<position info="not_deleted" x="70" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_tim.h" index="9">
+<item historyLabel="rccMyConfiguration.h" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="pwmMyConfiguration.c" index="1">
-<position info="not_deleted" x="153" y="0"/>
+<item historyLabel="rccMyConfiguration.c" index="7">
+<position/>
 </item>
-<item historyLabel="pwmMyConfiguration.h" index="2">
-<position info="not_deleted" x="83" y="17"/>
+<item historyLabel="main.c" index="2">
+<position/>
 </item>
-<item historyLabel="pwmMyConfiguration.c" index="1">
-<position info="not_deleted" x="153" y="0"/>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
 </item>
-<item historyLabel="pwmMyConfiguration.c" index="1">
-<position info="not_deleted" x="148" y="0"/>
+<item historyLabel="main.c" index="2">
+<position/>
 </item>
-<item historyLabel="stm32f4xx_tim.h" index="9">
-<position info="not_deleted" x="2590" y="0"/>
+<item historyLabel="gpioMyConfiguration.c" index="1">
+<position info="not_deleted" x="3571" y="0"/>
 </item>
-<item historyLabel="pwmMyConfiguration.c" index="1">
-<position info="not_deleted" x="148" y="0"/>
+<item historyLabel="rccMyConfiguration.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="pwmMyConfiguration.h" index="2">
-<position info="not_deleted" x="100" y="0"/>
+<item historyLabel="gpioMyConfiguration.c" index="1">
+<position info="not_deleted" x="3571" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_tim.h" index="9">
-<position info="not_deleted" x="2590" y="0"/>
+<item historyLabel="rccMyConfiguration.c" index="7">
+<position info="not_deleted" x="2683" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_tim.h" index="9">
-<position info="not_deleted" x="3292" y="0"/>
+<item historyLabel="gpioMyConfiguration.c" index="1">
+<position info="not_deleted" x="3571" y="0"/>
 </item>
-<item historyLabel="pwmMyConfiguration.c" index="1">
-<position info="not_deleted" x="148" y="0"/>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
 </item>
-<item active="true" historyLabel="stm32f4xx_tim.h" index="9">
-<position info="not_deleted" x="3292" y="0"/>
+<item historyLabel="main.c" index="2">
+<position info="not_deleted" x="1089" y="0"/>
+</item>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
+</item>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
+</item>
+<item historyLabel="stm32f4xx_tim.h" index="5">
+<position info="not_deleted" x="4045" y="19"/>
+</item>
+<item historyLabel="rccMyConfiguration.c" index="7">
+<position info="not_deleted" x="2683" y="0"/>
+</item>
+<item historyLabel="gpioMyConfiguration.c" index="1">
+<position info="not_deleted" x="3571" y="0"/>
+</item>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
+</item>
+<item historyLabel="gpioMyConfiguration.c" index="1">
+<position info="not_deleted" x="3571" y="0"/>
+</item>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
+</item>
+<item historyLabel="pwmMyConfiguration.h" index="4">
+<position info="not_deleted" x="140" y="0"/>
+</item>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position/>
+</item>
+<item historyLabel="gpioMyConfiguration.c" index="1">
+<position info="not_deleted" x="3571" y="0"/>
+</item>
+<item historyLabel="rccMyConfiguration.c" index="7">
+<position info="not_deleted" x="2683" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_tim.h" index="5">
+<position info="not_deleted" x="4045" y="19"/>
+</item>
+<item historyLabel="rccMyConfiguration.c" index="7">
+<position info="not_deleted" x="2683" y="0"/>
+</item>
+<item historyLabel="gpioMyConfiguration.c" index="1">
+<position info="not_deleted" x="3571" y="0"/>
+</item>
+<item historyLabel="main.c" index="2">
+<position info="not_deleted" x="1089" y="0"/>
+</item>
+<item historyLabel="pwmMyConfiguration.c" index="0">
+<position info="not_deleted" x="337" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="2">
+<position info="not_deleted" x="1089" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -428,31 +408,42 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pwmMyConfiguration.c" tooltip="BalancingRobot/pwmMyConfiguration.c">
+<persistable path="/BalancingRobot/pwmMyConfiguration.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pwmMyConfiguration.h" tooltip="BalancingRobot/pwmMyConfiguration.h">
+<persistable path="/BalancingRobot/pwmMyConfiguration.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_tim.h" tooltip="BalancingRobot/cmsis_lib/include/stm32f4xx_tim.h">
 <persistable path="/BalancingRobot/cmsis_lib/include/stm32f4xx_tim.h"/>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>
-<subPage/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nvicMyConfiguration.h" tooltip="BalancingRobot/nvicMyConfiguration.h">
-<persistable path="/BalancingRobot/nvicMyConfiguration.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nvicMyConfiguration.c" tooltip="BalancingRobot/nvicMyConfiguration.c">
-<persistable path="/BalancingRobot/nvicMyConfiguration.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="rccMyConfiguration.c" tooltip="BalancingRobot/rccMyConfiguration.c">
 <persistable path="/BalancingRobot/rccMyConfiguration.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpioMyConfiguration.h" tooltip="BalancingRobot/gpioMyConfiguration.h">
-<persistable path="/BalancingRobot/gpioMyConfiguration.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="rccMyConfiguration.h" tooltip="BalancingRobot/rccMyConfiguration.h">
+<persistable path="/BalancingRobot/rccMyConfiguration.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpioMyConfiguration.c" tooltip="BalancingRobot/gpioMyConfiguration.c">
 <persistable path="/BalancingRobot/gpioMyConfiguration.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pwmMyConfiguration.h" tooltip="BalancingRobot/pwmMyConfiguration.h">
-<persistable path="/BalancingRobot/pwmMyConfiguration.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nvicMyConfiguration.h" tooltip="BalancingRobot/nvicMyConfiguration.h">
+<persistable path="/BalancingRobot/nvicMyConfiguration.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="BalancingRobot/main.c">
+<persistable path="/BalancingRobot/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_tim.c" tooltip="BalancingRobot/cmsis_lib/source/stm32f4xx_tim.c">
+<persistable path="/BalancingRobot/cmsis_lib/source/stm32f4xx_tim.c"/>
+</file>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>&#x0A;<subPage/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nvicMyConfiguration.c" tooltip="BalancingRobot/nvicMyConfiguration.c">
+<persistable path="/BalancingRobot/nvicMyConfiguration.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gpioMyConfiguration.h" tooltip="BalancingRobot/gpioMyConfiguration.h">
+<persistable path="/BalancingRobot/gpioMyConfiguration.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pwmMyConfiguration.c" tooltip="BalancingRobot/mpu6050/pwmMyConfiguration.c">
 <persistable path="/BalancingRobot/mpu6050/pwmMyConfiguration.c"/>
@@ -462,18 +453,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usartMyConfiguration.c" tooltip="BalancingRobot/usartMyConfiguration.c">
 <persistable path="/BalancingRobot/usartMyConfiguration.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usartMyConfiguration.h" tooltip="BalancingRobot/usartMyConfiguration.h">
-<persistable path="/BalancingRobot/usartMyConfiguration.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="HAL_MPU6050.h" tooltip="BalancingRobot/mpu6050/HAL_MPU6050.h">
-<persistable path="/BalancingRobot/mpu6050/HAL_MPU6050.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MPU6050.h" tooltip="BalancingRobot/mpu6050/MPU6050.h">
-<persistable path="/BalancingRobot/mpu6050/MPU6050.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MPU6050.c" tooltip="BalancingRobot/mpu6050/MPU6050.c">
-<persistable path="/BalancingRobot/mpu6050/MPU6050.c"/>
 </file>
 </mruList>
 </workbench>

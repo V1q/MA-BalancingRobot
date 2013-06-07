@@ -10,8 +10,7 @@
 #include "Math.h"
 #include <stdio.h>
 
-//--------------
-//main loop
+
 int main(void)
 {
 
@@ -42,7 +41,6 @@ int main(void)
 
     while(1)
     {
-
 
     }
 }
