@@ -44,12 +44,12 @@ int main(void)
 	yGyroOffset = offsets[4];
 
 	PIDStructInit(&MyPIDStruct);
-	MyPIDStruct.kp = 10;
-	MyPIDStruct.ki = 0.5;
-	MyPIDStruct.kd = 0.1;
+	MyPIDStruct.kp = 2;
+	MyPIDStruct.ki = 0;
+	MyPIDStruct.kd = 0;
 
 	//sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 10500000ul); // interruption every 1/2sec from systick
-	sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 840000ul); // interruption every 0.04sec from systick
+	sysTick_Config_Mod(SysTick_CLKSource_HCLK_Div8, 840000); // interruption every 0.04sec from systick
 
     while(1)
     {

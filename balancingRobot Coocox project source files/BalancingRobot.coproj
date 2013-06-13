@@ -160,11 +160,11 @@
     <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="libs/cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_usart.h" path="libs/cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
     <File name="myFiles/src/stm32f4xx_it.c" path="my_files/stm32f4xx_it.c" type="1"/>
-    <File name="cmsis_boot/stm32f4xx.h" path="libs/cmsis_boot/stm32f4xx.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_flash.c" path="libs/cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
     <File name="mpu6050" path="" type="2"/>
-    <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="cmsis/core_cm4_simd.h" path="libs/cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_flash.c" path="libs/cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="libs/cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis/core_cmFunc.h" path="libs/cmsis/core_cmFunc.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="libs/cmsis/core_cm4.h" type="1"/>
     <File name="myFiles/src/rccMyConfiguration.c" path="my_files/rccMyConfiguration.c" type="1"/>
@@ -179,8 +179,8 @@
     <File name="myFiles/include/pid.h" path="my_files/pid.h" type="1"/>
     <File name="myFiles/include/usartMyFunctions.h" path="my_files/usartMyFunctions.h" type="1"/>
     <File name="cmsis_boot/stm32f4xx_conf.h" path="libs/cmsis_boot/stm32f4xx_conf.h" type="1"/>
-    <File name="myFiles" path="" type="2"/>
     <File name="cmsis_boot/system_stm32f4xx.h" path="libs/cmsis_boot/system_stm32f4xx.h" type="1"/>
+    <File name="myFiles" path="" type="2"/>
     <File name="myFiles/src/pid.c" path="my_files/pid.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="libs/cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="libs/cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
@@ -205,8 +205,8 @@
     <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="libs/cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
     <File name="syscalls" path="" type="2"/>
     <File name="cmsis_lib/include/misc.h" path="libs/cmsis_lib/include/misc.h" type="1"/>
-    <File name="myFiles/src/nvicMyConfiguration.c" path="my_files/nvicMyConfiguration.c" type="1"/>
     <File name="myFiles/src" path="" type="2"/>
+    <File name="myFiles/src/nvicMyConfiguration.c" path="my_files/nvicMyConfiguration.c" type="1"/>
     <File name="cmsis_lib/include" path="" type="2"/>
     <File name="mpu6050/MPU6050.c" path="my_files/MPU6050.c" type="1"/>
     <File name="main.c" path="main.c" type="1"/>

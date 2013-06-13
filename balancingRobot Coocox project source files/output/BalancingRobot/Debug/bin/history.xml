@@ -1,30 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.5.2 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=wzorzec_Flash.map -O0 --gc-sections -lm -lgcc -lc -LC:\CooCox\CoIDE\configuration\ProgramData\BalancingRobot -TC:\CooCox\CoIDE\configuration\ProgramData\BalancingRobot/arm-gcc-link.ld -g -LC:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\softfp -lm">
-      <target file="wzorzec_Flash.elf" lastModified="13f1f84cc29">
+      <target file="wzorzec_Flash.elf" lastModified="13f2b621d49">
          <source file="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\softfp\libm.a" lastModified="13d5fdaf550"/>
-         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="13f1ae69179"/>
-         <source file="..\obj\usartMyFunctions.o" lastModified="13f1ae69234"/>
-         <source file="..\obj\stm32f4xx_usart.o" lastModified="13f1ae692fa"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="13f1a2ee978"/>
-         <source file="..\obj\main.o" lastModified="13f1f82d7c8"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="13f1ae694a2"/>
-         <source file="..\obj\stm32f4xx_it.o" lastModified="13f1f81975b"/>
-         <source file="..\obj\pwmMyConfiguration.o" lastModified="13f1f84c984"/>
-         <source file="..\obj\usartMyConfiguration.o" lastModified="13f1ae6967a"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="13f1ae6972a"/>
-         <source file="..\obj\stm32f4xx_flash.o" lastModified="13f1ae697f5"/>
-         <source file="..\obj\nvicMyConfiguration.o" lastModified="13f1ae6987f"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="13f1ae6990b"/>
-         <source file="..\obj\syscalls.o" lastModified="13f1ae699bd"/>
-         <source file="..\obj\gpioMyConfiguration.o" lastModified="13f1f819864"/>
-         <source file="..\obj\rccMyConfiguration.o" lastModified="13f1f8198cd"/>
-         <source file="..\obj\stm32f4xx_i2c.o" lastModified="13f1ae69b8b"/>
-         <source file="..\obj\stm32f4xx_exti.o" lastModified="13f1ae69c10"/>
-         <source file="..\obj\misc.o" lastModified="13f1ae69c91"/>
-         <source file="..\obj\MPU6050.o" lastModified="13f1ae69d3c"/>
-         <source file="..\obj\pid.o" lastModified="13f1f819931"/>
-         <source file="..\obj\stm32f4xx_tim.o" lastModified="13f1ae69e82"/>
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="13f2b5e7216"/>
+         <source file="..\obj\usartMyFunctions.o" lastModified="13f2b5e7279"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="13f2b5e72f9"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="13f2b5e733f"/>
+         <source file="..\obj\main.o" lastModified="13f2b5e73ac"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="13f2b5e7448"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="13f2b621aac"/>
+         <source file="..\obj\pwmMyConfiguration.o" lastModified="13f2b5e7529"/>
+         <source file="..\obj\usartMyConfiguration.o" lastModified="13f2b5e757f"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="13f2b5e75ec"/>
+         <source file="..\obj\stm32f4xx_flash.o" lastModified="13f2b5e7669"/>
+         <source file="..\obj\nvicMyConfiguration.o" lastModified="13f2b5e76c9"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="13f2b5e7727"/>
+         <source file="..\obj\syscalls.o" lastModified="13f2b5e7791"/>
+         <source file="..\obj\gpioMyConfiguration.o" lastModified="13f2b5e77f5"/>
+         <source file="..\obj\rccMyConfiguration.o" lastModified="13f2b5e7851"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="13f2b5e78d3"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="13f2b5e7931"/>
+         <source file="..\obj\misc.o" lastModified="13f2b5e798b"/>
+         <source file="..\obj\MPU6050.o" lastModified="13f2b5e7a06"/>
+         <source file="..\obj\pid.o" lastModified="13f2b5e7a60"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="13f2b5e7b3e"/>
       </target>
    </processor>
 </history>

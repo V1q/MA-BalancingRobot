@@ -15,6 +15,7 @@
 #include "usartMyFunctions.h"
 #include "MPU6050.h"
 #include "pid.h"
+#include "pwmMyConfiguration.h"
 #include <stdio.h>
 #include <math.h>
 
@@ -28,12 +29,16 @@
 /* Global variables  ---------------------------------------------------------*/
 
 #define MAX_STRLEN 20 // this is the maximum string length of our string in characters
-volatile char received_string[MAX_STRLEN+2] = {' '}; // this will hold the recieved string
+volatile char received_string[MAX_STRLEN+2] = {' '}; // this will hold the received string
 
 float radiansToDegrees =180.0 / 3.14159265359 ;
 float gyroYAngle = 0.0;
 float filteredAngle=0.0;
 float alfa = 0.96;
+float onlyGyroAngle=0;
+int firstLoop=1;
+int transmit=0;
+
 extern int16_t  yGyroOffset;
 extern PIDStruct MyPIDStruct;
 
@@ -169,10 +174,16 @@ void USART1_IRQHandler(void)
 				received_string[cnt]=' ';
 				cnt++;
 			}
-			received_string[MAX_STRLEN]='\n';
-			received_string[MAX_STRLEN+1]='\r';
+			//received_string[MAX_STRLEN]='\n';
+			//received_string[MAX_STRLEN+1]='\r';
+			//USART_puts(USART1, received_string);
+
 			cnt = 0;
-			USART_puts(USART1, received_string);
+			if (received_string[0]=='s' && received_string[1]=='t'){
+				transmit=1;
+			}else if(received_string[0]=='s' && received_string[1]=='p'){
+				transmit=0;
+			}
 		}
 	}
 }
@@ -214,27 +225,41 @@ void EXTI0_IRQHandler(void)
   */
 void SysTick_Handler(void)
 {
+	if(transmit){
 
-	int16_t  AccelGyro[6]={0};
+		int16_t  AccelGyro[6]={0};
 
 
-	MPU6050_GetRawAccelGyro(AccelGyro);
+		MPU6050_GetRawAccelGyro(AccelGyro);
 
-	float accelerometerYAngle = atan2f(AccelGyro[0],AccelGyro[2])*radiansToDegrees;
-	float gyroscopeYAngleDelta = ((AccelGyro[4]-yGyroOffset) / 131.0)*-0.04;
+		float accelerometerYAngle = atan2f(AccelGyro[0],AccelGyro[2])*radiansToDegrees;
+		float gyroscopeYAngleDelta = ((AccelGyro[4]-yGyroOffset) / 131.0)*-0.04;
 
-	gyroYAngle = filteredAngle + gyroscopeYAngleDelta;
-	filteredAngle = ( alfa * gyroYAngle ) + ((1-alfa)*(accelerometerYAngle));
+		onlyGyroAngle += gyroscopeYAngleDelta;
 
-	float output = pid(&MyPIDStruct);
-	pwm_set_pulse(output);
+		gyroYAngle = filteredAngle + gyroscopeYAngleDelta;
+		filteredAngle = ( alfa * gyroYAngle ) + ((1-alfa)*(accelerometerYAngle));
 
-	//// Visualisation part ////
+		MyPIDStruct.currentError = filteredAngle;
 
-	/* Set unbuffered mode for stdout (newlib) */
-	setvbuf( stdout, 0, _IONBF, 0 );
-	//printf("filtered angle:\t  %f \n\r", filteredAngle);
-	printf("%f\n", filteredAngle);
+		if(firstLoop){
+			MyPIDStruct.oldError = filteredAngle;
+			yGyroOffset = AccelGyro[4];
+			firstLoop=0;
+		}
 
+		float output = pid(&MyPIDStruct);
+		//pwm_set_pulse(output);
+
+		//// Visualisation part ////
+
+		/* Set unbuffered mode for stdout (newlib) */
+		setvbuf( stdout, 0, _IONBF, 0 );
+		//printf("filtered angle:\t  %f \n\r", filteredAngle);
+
+		printf("%f\n\r", onlyGyroAngle);
+		printf("%f\n\r", accelerometerYAngle);
+		printf("%f\n\r", filteredAngle);
+	}
 }
 

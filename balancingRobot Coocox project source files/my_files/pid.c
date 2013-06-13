@@ -5,7 +5,7 @@ float pid(PIDStruct* CurrentPIDStruct) {
 	float pError = CurrentPIDStruct->currentError;
 	float iError = CurrentPIDStruct->currentError + CurrentPIDStruct->integral;
 	CurrentPIDStruct->integral = iError;
-	float dError = CurrentPIDStruct->currentError - CurrentPIDStruct->oldError;
+	float dError = (CurrentPIDStruct->currentError - CurrentPIDStruct->oldError) / 0.04;
 
 	float output = (CurrentPIDStruct->kp*pError) + (CurrentPIDStruct->ki*iError) + (CurrentPIDStruct->kd*dError);
 
