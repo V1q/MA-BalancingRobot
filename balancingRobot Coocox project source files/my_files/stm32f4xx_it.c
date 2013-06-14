@@ -257,8 +257,8 @@ void SysTick_Handler(void)
 		setvbuf( stdout, 0, _IONBF, 0 );
 		//printf("filtered angle:\t  %f \n\r", filteredAngle);
 
-		printf("%f\n\r", onlyGyroAngle);
-		printf("%f\n\r", accelerometerYAngle);
+		//printf("%f\n\r", onlyGyroAngle);
+		//printf("%f\n\r", accelerometerYAngle);
 		printf("%f\n\r", filteredAngle);
 	}
 }

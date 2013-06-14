@@ -39,6 +39,8 @@ int main(void)
 		USART_puts(USART1, "I2C initialization failed!\r\n");
 	}
 
+	USART1->DR=0;
+
 	int16_t  offsets[6]={0};
 	MPU6050_GetRawAccelGyro(offsets);
 	yGyroOffset = offsets[4];
