@@ -17,7 +17,7 @@
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_gpio.h"/>
       </source>
-      <source file="..\..\..\..\my_files\rccMyConfiguration.c" lastModified="13f1f79a994">
+      <source file="..\..\..\..\my_files\rccMyConfiguration.c" lastModified="13f481279cf">
          <include file="..\..\..\..\my_files\rccMyConfiguration.h"/>
       </source>
       <source file="..\..\..\..\my_files\usartMyFunctions.c" lastModified="13ece2f408f">
@@ -29,10 +29,10 @@
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_exti.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_usart.h"/>
       </source>
-      <source file="..\..\..\..\my_files\gpioMyConfiguration.c" lastModified="13f1f78af3c">
+      <source file="..\..\..\..\my_files\gpioMyConfiguration.c" lastModified="13f482506a1">
          <include file="..\..\..\..\my_files\gpioMyConfiguration.h"/>
       </source>
-      <source file="..\..\..\..\my_files\stm32f4xx_it.c" lastModified="13f43125df8">
+      <source file="..\..\..\..\my_files\stm32f4xx_it.c" lastModified="13f48040732">
          <include file="..\..\..\..\my_files\stm32f4xx_it.h"/>
          <include file="..\..\..\..\my_files\usartMyFunctions.h"/>
          <include file="..\..\..\..\my_files\MPU6050.h"/>
@@ -57,7 +57,7 @@
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13ebc9155c4">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\..\my_files\pwmMyConfiguration.c" lastModified="13f1f84c11d">
+      <source file="..\..\..\..\my_files\pwmMyConfiguration.c" lastModified="13f481d9146">
          <include file="..\..\..\..\my_files\pwmMyConfiguration.h"/>
       </source>
       <source file="..\..\..\..\libs\cmsis\core_cmInstr.h" lastModified="13b12f1cee9">
@@ -93,15 +93,6 @@
       </source>
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13b12f1cae1">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\..\main.c" lastModified="13f43324d45">
-         <include file="..\..\..\..\my_files\rccMyConfiguration.h"/>
-         <include file="..\..\..\..\my_files\gpioMyConfiguration.h"/>
-         <include file="..\..\..\..\my_files\nvicMyConfiguration.h"/>
-         <include file="..\..\..\..\my_files\usartMyConfiguration.h"/>
-         <include file="..\..\..\..\my_files\pwmMyConfiguration.h"/>
-         <include file="..\..\..\..\my_files\pid.h"/>
-         <include file="..\..\..\..\my_files\MPU6050.h"/>
       </source>
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13b12f1cb05">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>

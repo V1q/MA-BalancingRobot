@@ -74,25 +74,28 @@ void configureGPIOButton ( GPIO_InitTypeDef *GPIO_InitStructure ){
 
 void configureGPIOPWM ( GPIO_InitTypeDef *GPIO_InitStructure ){
 
-	//PA3 - TIM5 CH4
-	GPIO_InitStructure->GPIO_Pin = GPIO_Pin_3;
-	GPIO_InitStructure->GPIO_Speed = GPIO_Speed_100MHz;
-	GPIO_InitStructure->GPIO_Mode = GPIO_Mode_AF;
+	GPIO_InitTypeDef GPIO_InitStructure1;
+
+	//PA2 - TIM4  CH4
+	GPIO_InitStructure1.GPIO_Pin = GPIO_Pin_8;
+	GPIO_InitStructure1.GPIO_Mode = GPIO_Mode_AF;
+	GPIO_InitStructure1.GPIO_Speed = GPIO_Speed_100MHz;
+	GPIO_InitStructure1.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure1.GPIO_PuPd = GPIO_PuPd_UP ;
+	GPIO_Init(GPIOB, &GPIO_InitStructure1);
+
+	GPIO_PinAFConfig(GPIOB, GPIO_PinSource8, GPIO_AF_TIM4);
+
+	//test
+	GPIO_InitStructure->GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5;
+	GPIO_InitStructure->GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_InitStructure->GPIO_Mode = GPIO_Mode_OUT;
 	GPIO_InitStructure->GPIO_OType = GPIO_OType_PP;
 	GPIO_InitStructure->GPIO_PuPd = GPIO_PuPd_UP;
 	GPIO_Init(GPIOA, GPIO_InitStructure);
 
-	GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_TIM5);
-
-	//PA2 - TIM2  CH3
-	GPIO_InitStructure->GPIO_Pin = GPIO_Pin_2;
-	GPIO_InitStructure->GPIO_Speed = GPIO_Speed_100MHz;
-	GPIO_InitStructure->GPIO_Mode = GPIO_Mode_AF;
-	GPIO_InitStructure->GPIO_OType = GPIO_OType_PP;
-	GPIO_InitStructure->GPIO_PuPd = GPIO_PuPd_UP;
-	GPIO_Init(GPIOA, GPIO_InitStructure);
-
-	GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_TIM2);
+	GPIO_SetBits(GPIOA, GPIO_Pin_4);
+	GPIO_ResetBits(GPIOA, GPIO_Pin_5);
 
 }
 

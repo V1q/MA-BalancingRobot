@@ -38,6 +38,7 @@ float alfa = 0.96;
 float onlyGyroAngle=0;
 int firstLoop=1;
 int transmit=0;
+volatile int pulseTest =0;
 
 extern int16_t  yGyroOffset;
 extern PIDStruct MyPIDStruct;
@@ -197,21 +198,22 @@ void USART1_IRQHandler(void)
 void EXTI0_IRQHandler(void)
 {
 
-	uint8_t currentButtonStatus = GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0);
-	int i=1000;
-	while(i)i=i-1;
-	uint8_t nextButtonStatus = GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0);
+	//uint8_t currentButtonStatus = GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0);
+	//int i=1000;
+	//while(i)i=i-1;
+	//uint8_t nextButtonStatus = GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0);
 
-	if(EXTI_GetITStatus(EXTI_Line0) != RESET
-			&& currentButtonStatus==nextButtonStatus && currentButtonStatus == 0)
+	if(EXTI_GetITStatus(EXTI_Line0) != RESET)
+			//&& currentButtonStatus==nextButtonStatus && currentButtonStatus == 0)
 	{
 		/* Toggle LED1 */
 		GPIO_ToggleBits(GPIOD, GPIO_Pin_12);
 
-		volatile char message[]= "Click!\r\n";
-		volatile char *messagePointer = &message[0];
 
-		USART_puts(USART1, messagePointer);
+		//volatile char message[]= "Click!\r\n";
+		//volatile char *messagePointer = &message[0];
+
+		//USART_puts(USART1, messagePointer);
 
 		/* Clear the EXTI line 0 pending bit */
 		EXTI_ClearITPendingBit(EXTI_Line0);

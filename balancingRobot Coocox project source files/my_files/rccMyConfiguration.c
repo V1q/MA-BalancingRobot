@@ -73,9 +73,8 @@ void enableClockSourcesForPeripherials(){
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
 	//enable clock source for GPIO B - USART pins
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
-	//enable clock source for TIM2 and TIM5
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM5, ENABLE);
+	//enable tim4
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
 	//enable port E for motor direction control
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOE, ENABLE);
 }
