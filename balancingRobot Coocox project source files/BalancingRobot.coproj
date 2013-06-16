@@ -151,20 +151,20 @@
     <Component id="526" name="SYSCFG" path="" type="2"/>
   </Components>
   <Files>
+    <File name="myFiles/src/gpioMyConfiguration.c" path="my_files/gpioMyConfiguration.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="libs/cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_flash.h" path="libs/cmsis_lib/include/stm32f4xx_flash.h" type="1"/>
-    <File name="myFiles/src/gpioMyConfiguration.c" path="my_files/gpioMyConfiguration.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_usart.c" path="libs/cmsis_lib/source/stm32f4xx_usart.c" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
     <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="libs/cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_usart.h" path="libs/cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
     <File name="myFiles/src/stm32f4xx_it.c" path="my_files/stm32f4xx_it.c" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="libs/cmsis_boot/stm32f4xx.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_flash.c" path="libs/cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
     <File name="mpu6050" path="" type="2"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="cmsis/core_cm4_simd.h" path="libs/cmsis/core_cm4_simd.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_flash.c" path="libs/cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
-    <File name="cmsis_boot/stm32f4xx.h" path="libs/cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis/core_cmFunc.h" path="libs/cmsis/core_cmFunc.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="libs/cmsis/core_cm4.h" type="1"/>
     <File name="myFiles/src/rccMyConfiguration.c" path="my_files/rccMyConfiguration.c" type="1"/>
@@ -187,8 +187,8 @@
     <File name="myFiles/include/pwmMyConfiguration.h" path="my_files/pwmMyConfiguration.h" type="1"/>
     <File name="myFiles/src/usartMyConfiguration.c" path="my_files/usartMyConfiguration.c" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="libs/cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="libs/cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="mpu6050/HAL_MPU6050.h" path="my_files/HAL_MPU6050.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="libs/cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="libs/cmsis/core_cmInstr.h" type="1"/>
     <File name="myFiles/include/usartMyConfiguration.h" path="my_files/usartMyConfiguration.h" type="1"/>
     <File name="myFiles/include" path="" type="2"/>
@@ -200,8 +200,8 @@
     <File name="cmsis_lib" path="" type="2"/>
     <File name="myFiles/src/pwmMyConfiguration.c" path="my_files/pwmMyConfiguration.c" type="1"/>
     <File name="myFiles/include/gpioMyConfiguration.h" path="my_files/gpioMyConfiguration.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
     <File name="myFiles/include/stm32f4xx_it.h" path="my_files/stm32f4xx_it.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="libs/cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
     <File name="syscalls" path="" type="2"/>
     <File name="cmsis_lib/include/misc.h" path="libs/cmsis_lib/include/misc.h" type="1"/>

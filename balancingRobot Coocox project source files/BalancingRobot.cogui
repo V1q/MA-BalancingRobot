@@ -23,11 +23,11 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="gpioMyConfiguration.c" partName="gpioMyConfiguration.c" path="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/my_files/gpioMyConfiguration.c" title="gpioMyConfiguration.c" tooltip="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/my_files/gpioMyConfiguration.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BalancingRobot/myFiles/src/gpioMyConfiguration.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3320" selectionTopPixel="990"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3355" selectionTopPixel="996"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/main.c" title="main.c" tooltip="D:/git/MA-BalancingRobot/balancingRobot Coocox project source files/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BalancingRobot/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="958" selectionTopPixel="456"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1377" selectionTopPixel="456"/>
 </editor>
 </editors>
 <views>
@@ -261,22 +261,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_lib/include/stm32f4xx_tim.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/myFiles/src/stm32f4xx_it.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_lib/include/stm32f4xx_rcc.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_lib/source/stm32f4xx_rcc.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/cmsis_boot/system_stm32f4xx.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BalancingRobot/myFiles/src/gpioMyConfiguration.c"/>
 </editors>
-<item historyLabel="rccMyConfiguration.c" index="2">
-<position/>
-</item>
-<item historyLabel="stm32f4xx_rcc.h" index="7">
-<position info="not_deleted" x="16991" y="19"/>
-</item>
-<item historyLabel="rccMyConfiguration.c" index="2">
-<position/>
-</item>
-<item historyLabel="gpioMyConfiguration.c" index="3">
-<position/>
-</item>
 <item historyLabel="pwmMyConfiguration.c" index="0">
 <position info="not_deleted" x="268" y="0"/>
 </item>
@@ -340,7 +328,7 @@
 <item historyLabel="gpioMyConfiguration.c" index="3">
 <position/>
 </item>
-<item historyLabel="stm32f4xx_rcc.c" index="8">
+<item historyLabel="stm32f4xx_rcc.c" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="gpioMyConfiguration.c" index="3">
@@ -364,7 +352,7 @@
 <item historyLabel="pwmMyConfiguration.c" index="0">
 <position info="not_deleted" x="198" y="0"/>
 </item>
-<item historyLabel="system_stm32f4xx.c" index="9">
+<item historyLabel="system_stm32f4xx.c" index="8">
 <position info="not_deleted" x="8171" y="15"/>
 </item>
 <item historyLabel="pwmMyConfiguration.c" index="0">
@@ -412,8 +400,20 @@
 <item historyLabel="gpioMyConfiguration.c" index="3">
 <position info="not_deleted" x="3320" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="5">
+<item historyLabel="main.c" index="5">
 <position info="not_deleted" x="1397" y="0"/>
+</item>
+<item historyLabel="gpioMyConfiguration.c" index="9">
+<position info="not_deleted" x="3355" y="0"/>
+</item>
+<item historyLabel="main.c" index="5">
+<position info="not_deleted" x="1400" y="107"/>
+</item>
+<item historyLabel="gpioMyConfiguration.c" index="9">
+<position info="not_deleted" x="3355" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="5">
+<position info="not_deleted" x="1400" y="107"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
