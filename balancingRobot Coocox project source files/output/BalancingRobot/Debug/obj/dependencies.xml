@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files /ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs /ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis_lib /ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis_boot /ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\my_files /ID:\git\MA-BalancingRobot /ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\cmsis_lib /ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis /ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\cmsis_lib\include /ID:\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis_lib\include">
+   <includePath signature="/I..\..\..\..\..\Users\V1q\Desktop\mgr\software\stm32f4\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis_lib\include /I..\..\..\..\..\Users\V1q\Desktop\mgr\software\stm32f4\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis /I..\..\..\..\..\Users\V1q\Desktop\mgr\software\stm32f4\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis_lib /I..\..\..\..\..\Users\V1q\Desktop\mgr\software\stm32f4\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs\cmsis_boot /I..\..\..\..\..\Users\V1q\Desktop\mgr\software\stm32f4\git\MA-BalancingRobot /I..\..\..\..\..\Users\V1q\Desktop\mgr\software\stm32f4\git\MA-BalancingRobot\balancingRobot Coocox project source files\cmsis_lib /I..\..\..\..\..\Users\V1q\Desktop\mgr\software\stm32f4\git\MA-BalancingRobot\balancingRobot Coocox project source files /I..\..\..\..\..\Users\V1q\Desktop\mgr\software\stm32f4\git\MA-BalancingRobot\balancingRobot Coocox project source files\cmsis_lib\include /I..\..\..\..\..\Users\V1q\Desktop\mgr\software\stm32f4\git\MA-BalancingRobot\balancingRobot Coocox project source files\libs /I..\..\..\..\..\Users\V1q\Desktop\mgr\software\stm32f4\git\MA-BalancingRobot\balancingRobot Coocox project source files\my_files">
       <source file="..\..\..\..\my_files\rccMyConfiguration.h" lastModified="13ece0a817e">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_flash.h"/>
@@ -17,7 +17,7 @@
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_gpio.h"/>
       </source>
-      <source file="..\..\..\..\my_files\rccMyConfiguration.c" lastModified="13f1f79a994">
+      <source file="..\..\..\..\my_files\rccMyConfiguration.c" lastModified="141467bbc6e">
          <include file="..\..\..\..\my_files\rccMyConfiguration.h"/>
       </source>
       <source file="..\..\..\..\my_files\usartMyFunctions.c" lastModified="13ece2f408f">
@@ -29,17 +29,10 @@
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_exti.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_usart.h"/>
       </source>
-      <source file="..\..\..\..\my_files\gpioMyConfiguration.c" lastModified="13f1f78af3c">
+      <source file="..\..\..\..\my_files\gpioMyConfiguration.c" lastModified="1414bdf1bc2">
          <include file="..\..\..\..\my_files\gpioMyConfiguration.h"/>
       </source>
-      <source file="..\..\..\..\my_files\stm32f4xx_it.c" lastModified="13f43125df8">
-         <include file="..\..\..\..\my_files\stm32f4xx_it.h"/>
-         <include file="..\..\..\..\my_files\usartMyFunctions.h"/>
-         <include file="..\..\..\..\my_files\MPU6050.h"/>
-         <include file="..\..\..\..\my_files\pid.h"/>
-         <include file="..\..\..\..\my_files\pwmMyConfiguration.h"/>
-      </source>
-      <source file="..\..\..\..\my_files\pwmMyConfiguration.h" lastModified="13f1f82d3db">
+      <source file="..\..\..\..\my_files\pwmMyConfiguration.h" lastModified="1414bf3cb23">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
@@ -57,7 +50,7 @@
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13ebc9155c4">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\..\my_files\pwmMyConfiguration.c" lastModified="13f1f84c11d">
+      <source file="..\..\..\..\my_files\pwmMyConfiguration.c" lastModified="1414bf500b6">
          <include file="..\..\..\..\my_files\pwmMyConfiguration.h"/>
       </source>
       <source file="..\..\..\..\libs\cmsis\core_cmInstr.h" lastModified="13b12f1cee9">
@@ -94,7 +87,7 @@
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13b12f1cae1">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\..\main.c" lastModified="13f43324d45">
+      <source file="..\..\..\..\main.c" lastModified="1414bfb39ce">
          <include file="..\..\..\..\my_files\rccMyConfiguration.h"/>
          <include file="..\..\..\..\my_files\gpioMyConfiguration.h"/>
          <include file="..\..\..\..\my_files\nvicMyConfiguration.h"/>
@@ -106,7 +99,7 @@
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13b12f1cb05">
          <include file="..\..\..\..\libs\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\..\my_files\MPU6050.h" lastModified="13f162bbd75">
+      <source file="..\..\..\..\my_files\MPU6050.h" lastModified="14103cd8d53">
          <include file="..\..\..\..\my_files\HAL_MPU6050.h"/>
       </source>
       <source file="..\..\..\..\libs\cmsis_lib\include\stm32f4xx_usart.h" lastModified="13e99c761f6">

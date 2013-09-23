@@ -18,6 +18,7 @@
 #include "pwmMyConfiguration.h"
 #include <stdio.h>
 #include <math.h>
+#include <stdint.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -205,6 +206,7 @@ void EXTI0_IRQHandler(void)
 	if(EXTI_GetITStatus(EXTI_Line0) != RESET
 			&& currentButtonStatus==nextButtonStatus && currentButtonStatus == 0)
 	{
+
 		/* Toggle LED1 */
 		GPIO_ToggleBits(GPIOD, GPIO_Pin_12);
 
@@ -226,9 +228,7 @@ void EXTI0_IRQHandler(void)
 void SysTick_Handler(void)
 {
 	if(transmit){
-
 		int16_t  AccelGyro[6]={0};
-
 
 		MPU6050_GetRawAccelGyro(AccelGyro);
 
@@ -249,17 +249,18 @@ void SysTick_Handler(void)
 		}
 
 		float output = pid(&MyPIDStruct);
+		//uint32_t output = 0x0000ffff;
 		//pwm_set_pulse(output);
 
 		//// Visualisation part ////
-
 		/* Set unbuffered mode for stdout (newlib) */
 		setvbuf( stdout, 0, _IONBF, 0 );
-		//printf("filtered angle:\t  %f \n\r", filteredAngle);
+		printf("filtered angle:\t  %f \n\r", filteredAngle);
 
-		//printf("%f\n\r", onlyGyroAngle);
-		//printf("%f\n\r", accelerometerYAngle);
+		printf("%f\n\r", onlyGyroAngle);
+		printf("%f\n\r", accelerometerYAngle);
 		printf("%f\n\r", filteredAngle);
+		printf("%f\n\r", output);
 	}
 }
 

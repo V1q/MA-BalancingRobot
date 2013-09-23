@@ -5,7 +5,7 @@
 //     2012-05-23 - initial release. Thanks to Jeff Rowberg <jeff@rowberg.net> for his AVR/Arduino
 //                  based development which inspired me & taken as reference to develop this.
 /* ============================================================================================
-MPU6050 device I2C library code for ARM STM32F103xx is placed under the MIT license
+MPU6050 device I2C library code for ARM STM32F4xx is placed under the MIT license
 Copyright (c) 2012 Harinadha Reddy Chintalapalli
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
